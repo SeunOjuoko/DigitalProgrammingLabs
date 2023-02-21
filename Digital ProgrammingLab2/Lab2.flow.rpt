@@ -1,0 +1,122 @@
+Flow report for Lab2
+Thu Oct 17 17:08:42 2019
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++------------------------------------+------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 17 17:08:41 2019    ;
+; Quartus II Version                 ; 7.1 Build 156 04/30/2007 SJ Full Version ;
+; Revision Name                      ; Lab2                                     ;
+; Top-level Entity Name              ; Lab2                                     ;
+; Family                             ; Cyclone II                               ;
+; Device                             ; EP2C20F484C7                             ;
+; Timing Models                      ; Final                                    ;
+; Met timing requirements            ; Yes                                      ;
+; Total logic elements               ; 546 / 18,752 ( 3 % )                     ;
+;     Total combinational functions  ; 398 / 18,752 ( 2 % )                     ;
+;     Dedicated logic registers      ; 433 / 18,752 ( 2 % )                     ;
+; Total registers                    ; 433                                      ;
+; Total pins                         ; 88 / 315 ( 28 % )                        ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 10,624 / 239,616 ( 4 % )                 ;
+; Embedded Multiplier 9-bit elements ; 1 / 52 ( 2 % )                           ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
++------------------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/17/2019 17:08:11 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Lab2                ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                        ;
++-------------------------------+------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name               ; Value                                                                  ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------+------------------------------------------------------------------------+---------------+-------------+------------------+
+; ENABLE_SIGNALTAP              ; On                                                                     ; --            ; --          ; --               ;
+; PARTITION_NETLIST_TYPE        ; SOURCE                                                                 ; --            ; --          ; Top              ;
+; SLD_NODE_CREATOR_ID           ; 110                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME          ; sld_signaltap                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_NODE_INFO=671116800                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_POWER_UP_TRIGGER=0                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_TRIGGER_LEVEL=1                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_SAMPLE_DEPTH=128                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_MEM_ADDRESS_BITS=7                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_TRIGGER_IN_ENABLED=0                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_TRIGGER_LEVEL_PIPELINE=1                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_INVERSION_MASK=0000000000000000                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_INVERSION_MASK_LENGTH=16                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_Lab2_auto_signaltap_0_1_6338, ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_ENABLE_ADVANCED_TRIGGER=1                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_DATA_BITS=83                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_TRIGGER_BITS=83                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_NODE_CRC_LOWORD=40874                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_NODE_CRC_HIWORD=27974                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT ; SLD_DATA_BIT_CNTR_BITS=7                                               ; --            ; --          ; auto_signaltap_0 ;
+; USE_SIGNALTAP_FILE            ; stp1.stp                                                               ; --            ; --          ; --               ;
++-------------------------------+------------------------------------------------------------------------+---------------+-------------+------------------+
+
+
++----------------------------------------+
+; Flow Elapsed Time                      ;
++-------------------------+--------------+
+; Module Name             ; Elapsed Time ;
++-------------------------+--------------+
+; Analysis & Synthesis    ; 00:00:12     ;
+; Fitter                  ; 00:00:05     ;
+; Assembler               ; 00:00:05     ;
+; Classic Timing Analyzer ; 00:00:01     ;
+; Total                   ; 00:00:23     ;
++-------------------------+--------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
+quartus_fit --read_settings_files=off --write_settings_files=off Lab2 -c Lab2
+quartus_asm --read_settings_files=off --write_settings_files=off Lab2 -c Lab2
+quartus_tan --read_settings_files=off --write_settings_files=off Lab2 -c Lab2 --timing_analysis_only
+
+
+

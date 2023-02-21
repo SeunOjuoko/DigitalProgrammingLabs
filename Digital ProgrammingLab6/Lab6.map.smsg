@@ -1,0 +1,7 @@
+Warning (10236): Verilog HDL Implicit Net warning at Lab6.v(19): created implicit net for "AlUout"
+Info (10281): Verilog HDL Declaration information at Lab6.v(11): object "ALUout" differs only in case from object "AlUout" in the same scope
+Warning (10236): Verilog HDL Implicit Net warning at Lab6.v(22): created implicit net for "disp_drive"
+Warning (10236): Verilog HDL Implicit Net warning at Lab6.v(23): created implicit net for "clk"
+Warning (10236): Verilog HDL Implicit Net warning at Lab6.v(23): created implicit net for "number"
+Warning (10236): Verilog HDL Implicit Net warning at Lab6.v(23): created implicit net for "display"
+Warning (10268): Verilog HDL information at Lab6.v(45): Always Construct contains both blocking and non-blocking assignments

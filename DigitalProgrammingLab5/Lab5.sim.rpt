@@ -1,0 +1,624 @@
+Simulator report for Lab5
+Mon Nov 25 17:47:45 2019
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 60.0 us      ;
+; Simulation Netlist Size     ; 274 nodes    ;
+; Simulation Coverage         ;      43.93 % ;
+; Total Number of Transitions ; 1422         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; Lab5B.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      43.93 % ;
+; Total nodes checked                                 ; 274          ;
+; Total output ports checked                          ; 305          ;
+; Total output ports with complete 1/0-value coverage ; 134          ;
+; Total output ports with no 1/0-value coverage       ; 158          ;
+; Total output ports with no 1-value coverage         ; 161          ;
+; Total output ports with no 0-value coverage         ; 168          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                     ;
++------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                          ; Output Port Type ;
++------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+
+; |Lab5|Alu:Alu1|Add0~639                                          ; |Lab5|Alu:Alu1|Add0~639                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~640                                          ; |Lab5|Alu:Alu1|Add0~640                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~640                                          ; |Lab5|Alu:Alu1|Add0~641                                                   ; cout             ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[0]          ; dataout2         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[1]          ; dataout3         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[2]          ; dataout4         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[3]          ; dataout5         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[4]          ; dataout6         ;
+; |Lab5|Alu:Alu1|Add0~644                                          ; |Lab5|Alu:Alu1|Add0~644                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~644                                          ; |Lab5|Alu:Alu1|Add0~645                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~647                                          ; |Lab5|Alu:Alu1|Add0~647                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~647                                          ; |Lab5|Alu:Alu1|Add0~648                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~650                                          ; |Lab5|Alu:Alu1|Add0~650                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~650                                          ; |Lab5|Alu:Alu1|Add0~651                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~653                                          ; |Lab5|Alu:Alu1|Add0~653                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~653                                          ; |Lab5|Alu:Alu1|Add0~654                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~656                                          ; |Lab5|Alu:Alu1|Add0~656                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~656                                          ; |Lab5|Alu:Alu1|Add0~657                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~659                                          ; |Lab5|Alu:Alu1|Add0~659                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~659                                          ; |Lab5|Alu:Alu1|Add0~660                                                   ; cout             ;
+; |Lab5|Alu:Alu1|Add0~662                                          ; |Lab5|Alu:Alu1|Add0~662                                                   ; combout          ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1          ; dataout2         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT1 ; dataout3         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT2 ; dataout4         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT3 ; dataout5         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT4 ; dataout6         ;
+; |Lab5|Alu:Alu1|AO[0]                                             ; |Lab5|Alu:Alu1|AO[0]                                                      ; regout           ;
+; |Lab5|Alu:Alu1|A[0]                                              ; |Lab5|Alu:Alu1|A[0]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|A[2]                                              ; |Lab5|Alu:Alu1|A[2]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|B[1]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[1]~_Duplicate_1                                          ; regout           ;
+; |Lab5|Alu:Alu1|B[2]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[2]~_Duplicate_1                                          ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[0]                                         ; |Lab5|Mux:Mux1|muxOut[0]                                                  ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[1]                                         ; |Lab5|Mux:Mux1|muxOut[1]                                                  ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[2]                                         ; |Lab5|Mux:Mux1|muxOut[2]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[0]                                        ; |Lab5|Reg:Reg1|DataOut[0]                                                 ; regout           ;
+; |Lab5|Alu:Alu1|Mux7~176                                          ; |Lab5|Alu:Alu1|Mux7~176                                                   ; combout          ;
+; |Lab5|Alu:Alu1|AO[7]~126                                         ; |Lab5|Alu:Alu1|AO[7]~126                                                  ; combout          ;
+; |Lab5|Alu:Alu1|Mux7~177                                          ; |Lab5|Alu:Alu1|Mux7~177                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~643                                          ; |Lab5|Alu:Alu1|Add0~643                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux6~172                                          ; |Lab5|Alu:Alu1|Mux6~172                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux6~173                                          ; |Lab5|Alu:Alu1|Mux6~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~646                                          ; |Lab5|Alu:Alu1|Add0~646                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux5~172                                          ; |Lab5|Alu:Alu1|Mux5~172                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux5~173                                          ; |Lab5|Alu:Alu1|Mux5~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~649                                          ; |Lab5|Alu:Alu1|Add0~649                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux4~172                                          ; |Lab5|Alu:Alu1|Mux4~172                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux4~173                                          ; |Lab5|Alu:Alu1|Mux4~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~652                                          ; |Lab5|Alu:Alu1|Add0~652                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux3~172                                          ; |Lab5|Alu:Alu1|Mux3~172                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux3~173                                          ; |Lab5|Alu:Alu1|Mux3~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~655                                          ; |Lab5|Alu:Alu1|Add0~655                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux2~173                                          ; |Lab5|Alu:Alu1|Mux2~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~658                                          ; |Lab5|Alu:Alu1|Add0~658                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux1~173                                          ; |Lab5|Alu:Alu1|Mux1~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Add0~661                                          ; |Lab5|Alu:Alu1|Add0~661                                                   ; combout          ;
+; |Lab5|Alu:Alu1|Mux0~173                                          ; |Lab5|Alu:Alu1|Mux0~173                                                   ; combout          ;
+; |Lab5|Alu:Alu1|A[0]~295                                          ; |Lab5|Alu:Alu1|A[0]~295                                                   ; combout          ;
+; |Lab5|Alu:Alu1|A[0]~296                                          ; |Lab5|Alu:Alu1|A[0]~296                                                   ; combout          ;
+; |Lab5|Alu:Alu1|B[0]~306                                          ; |Lab5|Alu:Alu1|B[0]~306                                                   ; combout          ;
+; |Lab5|Mux:Mux1|Mux7~164                                          ; |Lab5|Mux:Mux1|Mux7~164                                                   ; combout          ;
+; |Lab5|Mux:Mux1|Mux7~165                                          ; |Lab5|Mux:Mux1|Mux7~165                                                   ; combout          ;
+; |Lab5|Mux:Mux1|Mux5~153                                          ; |Lab5|Mux:Mux1|Mux5~153                                                   ; combout          ;
+; |Lab5|Mux:Mux1|Mux5~154                                          ; |Lab5|Mux:Mux1|Mux5~154                                                   ; combout          ;
+; |Lab5|Reg:Reg1|R~80                                              ; |Lab5|Reg:Reg1|R~80                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~2096                                            ; |Lab5|Reg:Reg1|R~2096                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2097                                            ; |Lab5|Reg:Reg1|R~2097                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2098                                            ; |Lab5|Reg:Reg1|R~2098                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~64                                              ; |Lab5|Reg:Reg1|R~64                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~2099                                            ; |Lab5|Reg:Reg1|R~2099                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2100                                            ; |Lab5|Reg:Reg1|R~2100                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2101                                            ; |Lab5|Reg:Reg1|R~2101                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2102                                            ; |Lab5|Reg:Reg1|R~2102                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2103                                            ; |Lab5|Reg:Reg1|R~2103                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~66                                              ; |Lab5|Reg:Reg1|R~66                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~2104                                            ; |Lab5|Reg:Reg1|R~2104                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2105                                            ; |Lab5|Reg:Reg1|R~2105                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2106                                            ; |Lab5|Reg:Reg1|R~2106                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2107                                            ; |Lab5|Reg:Reg1|R~2107                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2108                                            ; |Lab5|Reg:Reg1|R~2108                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~68                                              ; |Lab5|Reg:Reg1|R~68                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~2110                                            ; |Lab5|Reg:Reg1|R~2110                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2111                                            ; |Lab5|Reg:Reg1|R~2111                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2112                                            ; |Lab5|Reg:Reg1|R~2112                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2113                                            ; |Lab5|Reg:Reg1|R~2113                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2115                                            ; |Lab5|Reg:Reg1|R~2115                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2116                                            ; |Lab5|Reg:Reg1|R~2116                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2117                                            ; |Lab5|Reg:Reg1|R~2117                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2118                                            ; |Lab5|Reg:Reg1|R~2118                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2120                                            ; |Lab5|Reg:Reg1|R~2120                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2121                                            ; |Lab5|Reg:Reg1|R~2121                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2122                                            ; |Lab5|Reg:Reg1|R~2122                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2123                                            ; |Lab5|Reg:Reg1|R~2123                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2125                                            ; |Lab5|Reg:Reg1|R~2125                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2126                                            ; |Lab5|Reg:Reg1|R~2126                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2127                                            ; |Lab5|Reg:Reg1|R~2127                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2128                                            ; |Lab5|Reg:Reg1|R~2128                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2130                                            ; |Lab5|Reg:Reg1|R~2130                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2131                                            ; |Lab5|Reg:Reg1|R~2131                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2132                                            ; |Lab5|Reg:Reg1|R~2132                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2133                                            ; |Lab5|Reg:Reg1|R~2133                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~2135                                            ; |Lab5|Reg:Reg1|R~2135                                                     ; combout          ;
+; |Lab5|rtl~6                                                      ; |Lab5|rtl~6                                                               ; combout          ;
+; |Lab5|rtl~0                                                      ; |Lab5|rtl~0                                                               ; combout          ;
+; |Lab5|rtl~1                                                      ; |Lab5|rtl~1                                                               ; combout          ;
+; |Lab5|rtl~3                                                      ; |Lab5|rtl~3                                                               ; combout          ;
+; |Lab5|out[0]                                                     ; |Lab5|out[0]                                                              ; padio            ;
+; |Lab5|A_out[0]                                                   ; |Lab5|A_out[0]                                                            ; padio            ;
+; |Lab5|A_out[2]                                                   ; |Lab5|A_out[2]                                                            ; padio            ;
+; |Lab5|B_out[1]                                                   ; |Lab5|B_out[1]                                                            ; padio            ;
+; |Lab5|B_out[2]                                                   ; |Lab5|B_out[2]                                                            ; padio            ;
+; |Lab5|Multiplexer_out[0]                                         ; |Lab5|Multiplexer_out[0]                                                  ; padio            ;
+; |Lab5|Multiplexer_out[1]                                         ; |Lab5|Multiplexer_out[1]                                                  ; padio            ;
+; |Lab5|Multiplexer_out[2]                                         ; |Lab5|Multiplexer_out[2]                                                  ; padio            ;
+; |Lab5|Register_out[0]                                            ; |Lab5|Register_out[0]                                                     ; padio            ;
+; |Lab5|ALUop[0]                                                   ; |Lab5|ALUop[0]~corein                                                     ; combout          ;
+; |Lab5|ALUop[1]                                                   ; |Lab5|ALUop[1]~corein                                                     ; combout          ;
+; |Lab5|clock                                                      ; |Lab5|clock~corein                                                        ; combout          ;
+; |Lab5|WrA                                                        ; |Lab5|WrA~corein                                                          ; combout          ;
+; |Lab5|WrB                                                        ; |Lab5|WrB~corein                                                          ; combout          ;
+; |Lab5|BS[0]                                                      ; |Lab5|BS[0]~corein                                                        ; combout          ;
+; |Lab5|BS[2]                                                      ; |Lab5|BS[2]~corein                                                        ; combout          ;
+; |Lab5|BS[1]                                                      ; |Lab5|BS[1]~corein                                                        ; combout          ;
+; |Lab5|rA[0]                                                      ; |Lab5|rA[0]~corein                                                        ; combout          ;
+; |Lab5|rA[1]                                                      ; |Lab5|rA[1]~corein                                                        ; combout          ;
+; |Lab5|rA[2]                                                      ; |Lab5|rA[2]~corein                                                        ; combout          ;
+; |Lab5|rW                                                         ; |Lab5|rW~corein                                                           ; combout          ;
+; |Lab5|wA[0]                                                      ; |Lab5|wA[0]~corein                                                        ; combout          ;
+; |Lab5|wA[2]                                                      ; |Lab5|wA[2]~corein                                                        ; combout          ;
+; |Lab5|wA[1]                                                      ; |Lab5|wA[1]~corein                                                        ; combout          ;
+; |Lab5|clock~clkctrl                                              ; |Lab5|clock~clkctrl                                                       ; outclk           ;
+; |Lab5|Reg:Reg1|R~128feeder                                       ; |Lab5|Reg:Reg1|R~128feeder                                                ; combout          ;
+; |Lab5|Reg:Reg1|R~130feeder                                       ; |Lab5|Reg:Reg1|R~130feeder                                                ; combout          ;
+; |Lab5|Reg:Reg1|R~66feeder                                        ; |Lab5|Reg:Reg1|R~66feeder                                                 ; combout          ;
+; |Lab5|Reg:Reg1|R~68feeder                                        ; |Lab5|Reg:Reg1|R~68feeder                                                 ; combout          ;
++------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                         ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                           ; Output Port Type ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[5]           ; dataout7         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[6]           ; dataout8         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[7]           ; dataout9         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT5  ; dataout7         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT6  ; dataout8         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT7  ; dataout9         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT8  ; dataout10        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT9  ; dataout11        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT10 ; dataout12        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT11 ; dataout13        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT12 ; dataout14        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT13 ; dataout15        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT14 ; dataout16        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT15 ; dataout17        ;
+; |Lab5|Alu:Alu1|AO[1]                                             ; |Lab5|Alu:Alu1|AO[1]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[3]                                             ; |Lab5|Alu:Alu1|AO[3]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[4]                                             ; |Lab5|Alu:Alu1|AO[4]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[5]                                             ; |Lab5|Alu:Alu1|AO[5]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[6]                                             ; |Lab5|Alu:Alu1|AO[6]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[7]                                             ; |Lab5|Alu:Alu1|AO[7]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|A[1]                                              ; |Lab5|Alu:Alu1|A[1]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[3]                                              ; |Lab5|Alu:Alu1|A[3]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[4]                                              ; |Lab5|Alu:Alu1|A[4]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[5]                                              ; |Lab5|Alu:Alu1|A[5]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[6]                                              ; |Lab5|Alu:Alu1|A[6]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[7]                                              ; |Lab5|Alu:Alu1|A[7]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|B[3]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[3]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[4]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[4]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[5]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[5]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[6]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[6]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[7]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[7]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[3]                                         ; |Lab5|Mux:Mux1|muxOut[3]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[4]                                         ; |Lab5|Mux:Mux1|muxOut[4]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[5]                                         ; |Lab5|Mux:Mux1|muxOut[5]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[6]                                         ; |Lab5|Mux:Mux1|muxOut[6]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[7]                                         ; |Lab5|Mux:Mux1|muxOut[7]                                                   ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[1]                                        ; |Lab5|Reg:Reg1|DataOut[1]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[3]                                        ; |Lab5|Reg:Reg1|DataOut[3]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[4]                                        ; |Lab5|Reg:Reg1|DataOut[4]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[5]                                        ; |Lab5|Reg:Reg1|DataOut[5]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[6]                                        ; |Lab5|Reg:Reg1|DataOut[6]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[7]                                        ; |Lab5|Reg:Reg1|DataOut[7]                                                  ; regout           ;
+; |Lab5|Alu:Alu1|Add0~637                                          ; |Lab5|Alu:Alu1|Add0~637                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux2~172                                          ; |Lab5|Alu:Alu1|Mux2~172                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux1~172                                          ; |Lab5|Alu:Alu1|Mux1~172                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux0~172                                          ; |Lab5|Alu:Alu1|Mux0~172                                                    ; combout          ;
+; |Lab5|Mux:Mux1|Mux6~142                                          ; |Lab5|Mux:Mux1|Mux6~142                                                    ; combout          ;
+; |Lab5|Mux:Mux1|Mux6~143                                          ; |Lab5|Mux:Mux1|Mux6~143                                                    ; combout          ;
+; |Lab5|Mux:Mux1|Mux4~86                                           ; |Lab5|Mux:Mux1|Mux4~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux4~87                                           ; |Lab5|Mux:Mux1|Mux4~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux3~86                                           ; |Lab5|Mux:Mux1|Mux3~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux3~87                                           ; |Lab5|Mux:Mux1|Mux3~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux2~86                                           ; |Lab5|Mux:Mux1|Mux2~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux2~87                                           ; |Lab5|Mux:Mux1|Mux2~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux1~86                                           ; |Lab5|Mux:Mux1|Mux1~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux1~87                                           ; |Lab5|Mux:Mux1|Mux1~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux0~86                                           ; |Lab5|Mux:Mux1|Mux0~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux0~87                                           ; |Lab5|Mux:Mux1|Mux0~87                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~96                                              ; |Lab5|Reg:Reg1|R~96                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~112                                             ; |Lab5|Reg:Reg1|R~112                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~128                                             ; |Lab5|Reg:Reg1|R~128                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~48                                              ; |Lab5|Reg:Reg1|R~48                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~32                                              ; |Lab5|Reg:Reg1|R~32                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~16                                              ; |Lab5|Reg:Reg1|R~16                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~98                                              ; |Lab5|Reg:Reg1|R~98                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~114                                             ; |Lab5|Reg:Reg1|R~114                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~82                                              ; |Lab5|Reg:Reg1|R~82                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~130                                             ; |Lab5|Reg:Reg1|R~130                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~50                                              ; |Lab5|Reg:Reg1|R~50                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~34                                              ; |Lab5|Reg:Reg1|R~34                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~100                                             ; |Lab5|Reg:Reg1|R~100                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~116                                             ; |Lab5|Reg:Reg1|R~116                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~132                                             ; |Lab5|Reg:Reg1|R~132                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~52                                              ; |Lab5|Reg:Reg1|R~52                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~36                                              ; |Lab5|Reg:Reg1|R~36                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~20                                              ; |Lab5|Reg:Reg1|R~20                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2109                                            ; |Lab5|Reg:Reg1|R~2109                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~102                                             ; |Lab5|Reg:Reg1|R~102                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~118                                             ; |Lab5|Reg:Reg1|R~118                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~86                                              ; |Lab5|Reg:Reg1|R~86                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~134                                             ; |Lab5|Reg:Reg1|R~134                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~54                                              ; |Lab5|Reg:Reg1|R~54                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~38                                              ; |Lab5|Reg:Reg1|R~38                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~22                                              ; |Lab5|Reg:Reg1|R~22                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~70                                              ; |Lab5|Reg:Reg1|R~70                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2114                                            ; |Lab5|Reg:Reg1|R~2114                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~104                                             ; |Lab5|Reg:Reg1|R~104                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~120                                             ; |Lab5|Reg:Reg1|R~120                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~88                                              ; |Lab5|Reg:Reg1|R~88                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~136                                             ; |Lab5|Reg:Reg1|R~136                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~56                                              ; |Lab5|Reg:Reg1|R~56                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~40                                              ; |Lab5|Reg:Reg1|R~40                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~24                                              ; |Lab5|Reg:Reg1|R~24                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~72                                              ; |Lab5|Reg:Reg1|R~72                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2119                                            ; |Lab5|Reg:Reg1|R~2119                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~106                                             ; |Lab5|Reg:Reg1|R~106                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~122                                             ; |Lab5|Reg:Reg1|R~122                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~90                                              ; |Lab5|Reg:Reg1|R~90                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~138                                             ; |Lab5|Reg:Reg1|R~138                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~58                                              ; |Lab5|Reg:Reg1|R~58                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~42                                              ; |Lab5|Reg:Reg1|R~42                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~26                                              ; |Lab5|Reg:Reg1|R~26                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~74                                              ; |Lab5|Reg:Reg1|R~74                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2124                                            ; |Lab5|Reg:Reg1|R~2124                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~108                                             ; |Lab5|Reg:Reg1|R~108                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~124                                             ; |Lab5|Reg:Reg1|R~124                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~92                                              ; |Lab5|Reg:Reg1|R~92                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~140                                             ; |Lab5|Reg:Reg1|R~140                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~60                                              ; |Lab5|Reg:Reg1|R~60                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~44                                              ; |Lab5|Reg:Reg1|R~44                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~28                                              ; |Lab5|Reg:Reg1|R~28                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~76                                              ; |Lab5|Reg:Reg1|R~76                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2129                                            ; |Lab5|Reg:Reg1|R~2129                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~110                                             ; |Lab5|Reg:Reg1|R~110                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~126                                             ; |Lab5|Reg:Reg1|R~126                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~94                                              ; |Lab5|Reg:Reg1|R~94                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~142                                             ; |Lab5|Reg:Reg1|R~142                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~62                                              ; |Lab5|Reg:Reg1|R~62                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~46                                              ; |Lab5|Reg:Reg1|R~46                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~30                                              ; |Lab5|Reg:Reg1|R~30                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~78                                              ; |Lab5|Reg:Reg1|R~78                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2134                                            ; |Lab5|Reg:Reg1|R~2134                                                      ; combout          ;
+; |Lab5|rtl~4                                                      ; |Lab5|rtl~4                                                                ; combout          ;
+; |Lab5|rtl~5                                                      ; |Lab5|rtl~5                                                                ; combout          ;
+; |Lab5|rtl~7                                                      ; |Lab5|rtl~7                                                                ; combout          ;
+; |Lab5|rtl~2                                                      ; |Lab5|rtl~2                                                                ; combout          ;
+; |Lab5|~GND                                                       ; |Lab5|~GND                                                                 ; combout          ;
+; |Lab5|out[1]                                                     ; |Lab5|out[1]                                                               ; padio            ;
+; |Lab5|out[3]                                                     ; |Lab5|out[3]                                                               ; padio            ;
+; |Lab5|out[4]                                                     ; |Lab5|out[4]                                                               ; padio            ;
+; |Lab5|out[5]                                                     ; |Lab5|out[5]                                                               ; padio            ;
+; |Lab5|out[6]                                                     ; |Lab5|out[6]                                                               ; padio            ;
+; |Lab5|out[7]                                                     ; |Lab5|out[7]                                                               ; padio            ;
+; |Lab5|A_out[1]                                                   ; |Lab5|A_out[1]                                                             ; padio            ;
+; |Lab5|A_out[3]                                                   ; |Lab5|A_out[3]                                                             ; padio            ;
+; |Lab5|A_out[4]                                                   ; |Lab5|A_out[4]                                                             ; padio            ;
+; |Lab5|A_out[5]                                                   ; |Lab5|A_out[5]                                                             ; padio            ;
+; |Lab5|A_out[6]                                                   ; |Lab5|A_out[6]                                                             ; padio            ;
+; |Lab5|A_out[7]                                                   ; |Lab5|A_out[7]                                                             ; padio            ;
+; |Lab5|B_out[3]                                                   ; |Lab5|B_out[3]                                                             ; padio            ;
+; |Lab5|B_out[4]                                                   ; |Lab5|B_out[4]                                                             ; padio            ;
+; |Lab5|B_out[5]                                                   ; |Lab5|B_out[5]                                                             ; padio            ;
+; |Lab5|B_out[6]                                                   ; |Lab5|B_out[6]                                                             ; padio            ;
+; |Lab5|B_out[7]                                                   ; |Lab5|B_out[7]                                                             ; padio            ;
+; |Lab5|Multiplexer_out[3]                                         ; |Lab5|Multiplexer_out[3]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[4]                                         ; |Lab5|Multiplexer_out[4]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[5]                                         ; |Lab5|Multiplexer_out[5]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[6]                                         ; |Lab5|Multiplexer_out[6]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[7]                                         ; |Lab5|Multiplexer_out[7]                                                   ; padio            ;
+; |Lab5|Register_out[1]                                            ; |Lab5|Register_out[1]                                                      ; padio            ;
+; |Lab5|Register_out[3]                                            ; |Lab5|Register_out[3]                                                      ; padio            ;
+; |Lab5|Register_out[4]                                            ; |Lab5|Register_out[4]                                                      ; padio            ;
+; |Lab5|Register_out[5]                                            ; |Lab5|Register_out[5]                                                      ; padio            ;
+; |Lab5|Register_out[6]                                            ; |Lab5|Register_out[6]                                                      ; padio            ;
+; |Lab5|Register_out[7]                                            ; |Lab5|Register_out[7]                                                      ; padio            ;
+; |Lab5|Reg:Reg1|R~70feeder                                        ; |Lab5|Reg:Reg1|R~70feeder                                                  ; combout          ;
+; |Lab5|Reg:Reg1|R~136feeder                                       ; |Lab5|Reg:Reg1|R~136feeder                                                 ; combout          ;
+; |Lab5|Reg:Reg1|R~138feeder                                       ; |Lab5|Reg:Reg1|R~138feeder                                                 ; combout          ;
+; |Lab5|Reg:Reg1|R~108feeder                                       ; |Lab5|Reg:Reg1|R~108feeder                                                 ; combout          ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                         ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                           ; Output Port Type ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[5]           ; dataout7         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[6]           ; dataout8         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_out2  ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|result[7]           ; dataout9         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT5  ; dataout7         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT6  ; dataout8         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT7  ; dataout9         ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT8  ; dataout10        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT9  ; dataout11        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT10 ; dataout12        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT11 ; dataout13        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT12 ; dataout14        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT13 ; dataout15        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT14 ; dataout16        ;
+; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1 ; |Lab5|Alu:Alu1|lpm_mult:Mult0|mult_cs01:auto_generated|mac_mult1~DATAOUT15 ; dataout17        ;
+; |Lab5|Alu:Alu1|AO[1]                                             ; |Lab5|Alu:Alu1|AO[1]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[2]                                             ; |Lab5|Alu:Alu1|AO[2]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[3]                                             ; |Lab5|Alu:Alu1|AO[3]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[4]                                             ; |Lab5|Alu:Alu1|AO[4]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[5]                                             ; |Lab5|Alu:Alu1|AO[5]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[6]                                             ; |Lab5|Alu:Alu1|AO[6]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|AO[7]                                             ; |Lab5|Alu:Alu1|AO[7]                                                       ; regout           ;
+; |Lab5|Alu:Alu1|A[1]                                              ; |Lab5|Alu:Alu1|A[1]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[3]                                              ; |Lab5|Alu:Alu1|A[3]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[4]                                              ; |Lab5|Alu:Alu1|A[4]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[5]                                              ; |Lab5|Alu:Alu1|A[5]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[6]                                              ; |Lab5|Alu:Alu1|A[6]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|A[7]                                              ; |Lab5|Alu:Alu1|A[7]                                                        ; regout           ;
+; |Lab5|Alu:Alu1|B[0]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[0]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[3]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[3]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[4]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[4]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[5]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[5]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[6]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[6]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Alu:Alu1|B[7]~_Duplicate_1                                 ; |Lab5|Alu:Alu1|B[7]~_Duplicate_1                                           ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[3]                                         ; |Lab5|Mux:Mux1|muxOut[3]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[4]                                         ; |Lab5|Mux:Mux1|muxOut[4]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[5]                                         ; |Lab5|Mux:Mux1|muxOut[5]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[6]                                         ; |Lab5|Mux:Mux1|muxOut[6]                                                   ; regout           ;
+; |Lab5|Mux:Mux1|muxOut[7]                                         ; |Lab5|Mux:Mux1|muxOut[7]                                                   ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[1]                                        ; |Lab5|Reg:Reg1|DataOut[1]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[2]                                        ; |Lab5|Reg:Reg1|DataOut[2]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[3]                                        ; |Lab5|Reg:Reg1|DataOut[3]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[4]                                        ; |Lab5|Reg:Reg1|DataOut[4]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[5]                                        ; |Lab5|Reg:Reg1|DataOut[5]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[6]                                        ; |Lab5|Reg:Reg1|DataOut[6]                                                  ; regout           ;
+; |Lab5|Reg:Reg1|DataOut[7]                                        ; |Lab5|Reg:Reg1|DataOut[7]                                                  ; regout           ;
+; |Lab5|Alu:Alu1|Add0~642                                          ; |Lab5|Alu:Alu1|Add0~642                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux2~172                                          ; |Lab5|Alu:Alu1|Mux2~172                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux1~172                                          ; |Lab5|Alu:Alu1|Mux1~172                                                    ; combout          ;
+; |Lab5|Alu:Alu1|Mux0~172                                          ; |Lab5|Alu:Alu1|Mux0~172                                                    ; combout          ;
+; |Lab5|Mux:Mux1|Mux6~142                                          ; |Lab5|Mux:Mux1|Mux6~142                                                    ; combout          ;
+; |Lab5|Mux:Mux1|Mux4~86                                           ; |Lab5|Mux:Mux1|Mux4~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux4~87                                           ; |Lab5|Mux:Mux1|Mux4~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux3~86                                           ; |Lab5|Mux:Mux1|Mux3~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux3~87                                           ; |Lab5|Mux:Mux1|Mux3~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux2~86                                           ; |Lab5|Mux:Mux1|Mux2~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux2~87                                           ; |Lab5|Mux:Mux1|Mux2~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux1~86                                           ; |Lab5|Mux:Mux1|Mux1~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux1~87                                           ; |Lab5|Mux:Mux1|Mux1~87                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux0~86                                           ; |Lab5|Mux:Mux1|Mux0~86                                                     ; combout          ;
+; |Lab5|Mux:Mux1|Mux0~87                                           ; |Lab5|Mux:Mux1|Mux0~87                                                     ; combout          ;
+; |Lab5|Reg:Reg1|R~96                                              ; |Lab5|Reg:Reg1|R~96                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~112                                             ; |Lab5|Reg:Reg1|R~112                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~128                                             ; |Lab5|Reg:Reg1|R~128                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~48                                              ; |Lab5|Reg:Reg1|R~48                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~32                                              ; |Lab5|Reg:Reg1|R~32                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~16                                              ; |Lab5|Reg:Reg1|R~16                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~98                                              ; |Lab5|Reg:Reg1|R~98                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~114                                             ; |Lab5|Reg:Reg1|R~114                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~82                                              ; |Lab5|Reg:Reg1|R~82                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~130                                             ; |Lab5|Reg:Reg1|R~130                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~50                                              ; |Lab5|Reg:Reg1|R~50                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~34                                              ; |Lab5|Reg:Reg1|R~34                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~18                                              ; |Lab5|Reg:Reg1|R~18                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~100                                             ; |Lab5|Reg:Reg1|R~100                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~116                                             ; |Lab5|Reg:Reg1|R~116                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~84                                              ; |Lab5|Reg:Reg1|R~84                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~132                                             ; |Lab5|Reg:Reg1|R~132                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~52                                              ; |Lab5|Reg:Reg1|R~52                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~36                                              ; |Lab5|Reg:Reg1|R~36                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~20                                              ; |Lab5|Reg:Reg1|R~20                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2109                                            ; |Lab5|Reg:Reg1|R~2109                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~102                                             ; |Lab5|Reg:Reg1|R~102                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~118                                             ; |Lab5|Reg:Reg1|R~118                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~86                                              ; |Lab5|Reg:Reg1|R~86                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~134                                             ; |Lab5|Reg:Reg1|R~134                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~54                                              ; |Lab5|Reg:Reg1|R~54                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~38                                              ; |Lab5|Reg:Reg1|R~38                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~22                                              ; |Lab5|Reg:Reg1|R~22                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~70                                              ; |Lab5|Reg:Reg1|R~70                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2114                                            ; |Lab5|Reg:Reg1|R~2114                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~104                                             ; |Lab5|Reg:Reg1|R~104                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~120                                             ; |Lab5|Reg:Reg1|R~120                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~88                                              ; |Lab5|Reg:Reg1|R~88                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~136                                             ; |Lab5|Reg:Reg1|R~136                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~56                                              ; |Lab5|Reg:Reg1|R~56                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~40                                              ; |Lab5|Reg:Reg1|R~40                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~24                                              ; |Lab5|Reg:Reg1|R~24                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~72                                              ; |Lab5|Reg:Reg1|R~72                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2119                                            ; |Lab5|Reg:Reg1|R~2119                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~106                                             ; |Lab5|Reg:Reg1|R~106                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~122                                             ; |Lab5|Reg:Reg1|R~122                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~90                                              ; |Lab5|Reg:Reg1|R~90                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~138                                             ; |Lab5|Reg:Reg1|R~138                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~58                                              ; |Lab5|Reg:Reg1|R~58                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~42                                              ; |Lab5|Reg:Reg1|R~42                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~26                                              ; |Lab5|Reg:Reg1|R~26                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~74                                              ; |Lab5|Reg:Reg1|R~74                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2124                                            ; |Lab5|Reg:Reg1|R~2124                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~108                                             ; |Lab5|Reg:Reg1|R~108                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~124                                             ; |Lab5|Reg:Reg1|R~124                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~92                                              ; |Lab5|Reg:Reg1|R~92                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~140                                             ; |Lab5|Reg:Reg1|R~140                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~60                                              ; |Lab5|Reg:Reg1|R~60                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~44                                              ; |Lab5|Reg:Reg1|R~44                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~28                                              ; |Lab5|Reg:Reg1|R~28                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~76                                              ; |Lab5|Reg:Reg1|R~76                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2129                                            ; |Lab5|Reg:Reg1|R~2129                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~110                                             ; |Lab5|Reg:Reg1|R~110                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~126                                             ; |Lab5|Reg:Reg1|R~126                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~94                                              ; |Lab5|Reg:Reg1|R~94                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~142                                             ; |Lab5|Reg:Reg1|R~142                                                       ; regout           ;
+; |Lab5|Reg:Reg1|R~62                                              ; |Lab5|Reg:Reg1|R~62                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~46                                              ; |Lab5|Reg:Reg1|R~46                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~30                                              ; |Lab5|Reg:Reg1|R~30                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~78                                              ; |Lab5|Reg:Reg1|R~78                                                        ; regout           ;
+; |Lab5|Reg:Reg1|R~2134                                            ; |Lab5|Reg:Reg1|R~2134                                                      ; combout          ;
+; |Lab5|rtl~4                                                      ; |Lab5|rtl~4                                                                ; combout          ;
+; |Lab5|rtl~5                                                      ; |Lab5|rtl~5                                                                ; combout          ;
+; |Lab5|rtl~7                                                      ; |Lab5|rtl~7                                                                ; combout          ;
+; |Lab5|~GND                                                       ; |Lab5|~GND                                                                 ; combout          ;
+; |Lab5|out[1]                                                     ; |Lab5|out[1]                                                               ; padio            ;
+; |Lab5|out[2]                                                     ; |Lab5|out[2]                                                               ; padio            ;
+; |Lab5|out[3]                                                     ; |Lab5|out[3]                                                               ; padio            ;
+; |Lab5|out[4]                                                     ; |Lab5|out[4]                                                               ; padio            ;
+; |Lab5|out[5]                                                     ; |Lab5|out[5]                                                               ; padio            ;
+; |Lab5|out[6]                                                     ; |Lab5|out[6]                                                               ; padio            ;
+; |Lab5|out[7]                                                     ; |Lab5|out[7]                                                               ; padio            ;
+; |Lab5|A_out[1]                                                   ; |Lab5|A_out[1]                                                             ; padio            ;
+; |Lab5|A_out[3]                                                   ; |Lab5|A_out[3]                                                             ; padio            ;
+; |Lab5|A_out[4]                                                   ; |Lab5|A_out[4]                                                             ; padio            ;
+; |Lab5|A_out[5]                                                   ; |Lab5|A_out[5]                                                             ; padio            ;
+; |Lab5|A_out[6]                                                   ; |Lab5|A_out[6]                                                             ; padio            ;
+; |Lab5|A_out[7]                                                   ; |Lab5|A_out[7]                                                             ; padio            ;
+; |Lab5|B_out[0]                                                   ; |Lab5|B_out[0]                                                             ; padio            ;
+; |Lab5|B_out[3]                                                   ; |Lab5|B_out[3]                                                             ; padio            ;
+; |Lab5|B_out[4]                                                   ; |Lab5|B_out[4]                                                             ; padio            ;
+; |Lab5|B_out[5]                                                   ; |Lab5|B_out[5]                                                             ; padio            ;
+; |Lab5|B_out[6]                                                   ; |Lab5|B_out[6]                                                             ; padio            ;
+; |Lab5|B_out[7]                                                   ; |Lab5|B_out[7]                                                             ; padio            ;
+; |Lab5|Multiplexer_out[3]                                         ; |Lab5|Multiplexer_out[3]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[4]                                         ; |Lab5|Multiplexer_out[4]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[5]                                         ; |Lab5|Multiplexer_out[5]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[6]                                         ; |Lab5|Multiplexer_out[6]                                                   ; padio            ;
+; |Lab5|Multiplexer_out[7]                                         ; |Lab5|Multiplexer_out[7]                                                   ; padio            ;
+; |Lab5|Register_out[1]                                            ; |Lab5|Register_out[1]                                                      ; padio            ;
+; |Lab5|Register_out[2]                                            ; |Lab5|Register_out[2]                                                      ; padio            ;
+; |Lab5|Register_out[3]                                            ; |Lab5|Register_out[3]                                                      ; padio            ;
+; |Lab5|Register_out[4]                                            ; |Lab5|Register_out[4]                                                      ; padio            ;
+; |Lab5|Register_out[5]                                            ; |Lab5|Register_out[5]                                                      ; padio            ;
+; |Lab5|Register_out[6]                                            ; |Lab5|Register_out[6]                                                      ; padio            ;
+; |Lab5|Register_out[7]                                            ; |Lab5|Register_out[7]                                                      ; padio            ;
+; |Lab5|ALUop[2]                                                   ; |Lab5|ALUop[2]~corein                                                      ; combout          ;
+; |Lab5|Reg:Reg1|R~70feeder                                        ; |Lab5|Reg:Reg1|R~70feeder                                                  ; combout          ;
+; |Lab5|Reg:Reg1|R~136feeder                                       ; |Lab5|Reg:Reg1|R~136feeder                                                 ; combout          ;
+; |Lab5|Reg:Reg1|R~138feeder                                       ; |Lab5|Reg:Reg1|R~138feeder                                                 ; combout          ;
+; |Lab5|Reg:Reg1|R~108feeder                                       ; |Lab5|Reg:Reg1|R~108feeder                                                 ; combout          ;
++------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 7.1 Build 156 04/30/2007 SJ Full Version
+    Info: Processing started: Mon Nov 25 17:47:44 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
+Info: Using vector source file "H:/DigitalProgrammingLab5/Lab5B.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      43.93 %
+Info: Number of transitions in simulation is 1422
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 201 megabytes of memory during processing
+    Info: Processing ended: Mon Nov 25 17:47:45 2019
+    Info: Elapsed time: 00:00:01
+
+

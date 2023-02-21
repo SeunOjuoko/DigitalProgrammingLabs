@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 04 11:05:12 2019
+Quartus II Version : 7.1 Build 156 04/30/2007 SJ Full Version
+Revision Name : HalfAdder
+Top-level Entity Name : HalfAdder
+Family : Cyclone II
+Total logic elements : 2
+    Total combinational functions : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

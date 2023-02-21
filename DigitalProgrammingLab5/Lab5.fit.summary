@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 25 17:42:07 2019
+Quartus II Version : 7.1 Build 156 04/30/2007 SJ Full Version
+Revision Name : Lab5
+Top-level Entity Name : Lab5
+Family : Cyclone II
+Device : EP2C20F484C7
+Timing Models : Final
+Total logic elements : 135 / 18,752 ( < 1 % )
+    Total combinational functions : 103 / 18,752 ( < 1 % )
+    Dedicated logic registers : 104 / 18,752 ( < 1 % )
+Total registers : 104
+Total pins : 56 / 315 ( 18 % )
+Total virtual pins : 0
+Total memory bits : 0 / 239,616 ( 0 % )
+Embedded Multiplier 9-bit elements : 1 / 52 ( 2 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,477 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP2C15/20 (0x020B30DD)" sof_file="" top_level_entity="Lab2">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="5"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+      <single attribute="advanced trigger zoom level" value="17"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2019/10/17 17:08:08  #0">
+      <clock name="clock" polarity="posedge"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="A[0]" tap_mode="classic" type="input pin"/>
+          <wire name="A[1]" tap_mode="classic" type="input pin"/>
+          <wire name="A[2]" tap_mode="classic" type="input pin"/>
+          <wire name="A[3]" tap_mode="classic" type="input pin"/>
+          <wire name="B[0]" tap_mode="classic" type="input pin"/>
+          <wire name="B[1]" tap_mode="classic" type="input pin"/>
+          <wire name="B[2]" tap_mode="classic" type="input pin"/>
+          <wire name="B[3]" tap_mode="classic" type="input pin"/>
+          <wire name="Numout[0]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[1]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[2]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[3]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[4]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[5]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[6]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[7]" tap_mode="classic" type="output pin"/>
+          <wire name="Select[0]" tap_mode="classic" type="input pin"/>
+          <wire name="Select[1]" tap_mode="classic" type="input pin"/>
+          <wire name="Select[2]" tap_mode="classic" type="input pin"/>
+          <wire name="add_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[7]" tap_mode="classic" type="output pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="A[0]" tap_mode="classic" type="input pin"/>
+          <wire name="A[1]" tap_mode="classic" type="input pin"/>
+          <wire name="A[2]" tap_mode="classic" type="input pin"/>
+          <wire name="A[3]" tap_mode="classic" type="input pin"/>
+          <wire name="B[0]" tap_mode="classic" type="input pin"/>
+          <wire name="B[1]" tap_mode="classic" type="input pin"/>
+          <wire name="B[2]" tap_mode="classic" type="input pin"/>
+          <wire name="B[3]" tap_mode="classic" type="input pin"/>
+          <wire name="Numout[0]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[1]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[2]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[3]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[4]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[5]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[6]" tap_mode="classic" type="output pin"/>
+          <wire name="Numout[7]" tap_mode="classic" type="output pin"/>
+          <wire name="Select[0]" tap_mode="classic" type="input pin"/>
+          <wire name="Select[1]" tap_mode="classic" type="input pin"/>
+          <wire name="Select[2]" tap_mode="classic" type="input pin"/>
+          <wire name="add_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="add_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="all_on_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="ave_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="div_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="max_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="min_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="mul_result[7]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[0]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[1]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[2]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[3]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[4]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[5]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[6]" tap_mode="classic" type="output pin"/>
+          <wire name="sub_result[7]" tap_mode="classic" type="output pin"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="A" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="A[0]"/>
+            <net is_signal_inverted="no" name="A[1]"/>
+            <net is_signal_inverted="no" name="A[2]"/>
+            <net is_signal_inverted="no" name="A[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="B" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="B[0]"/>
+            <net is_signal_inverted="no" name="B[1]"/>
+            <net is_signal_inverted="no" name="B[2]"/>
+            <net is_signal_inverted="no" name="B[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="Numout" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="Numout[0]"/>
+            <net is_signal_inverted="no" name="Numout[1]"/>
+            <net is_signal_inverted="no" name="Numout[2]"/>
+            <net is_signal_inverted="no" name="Numout[3]"/>
+            <net is_signal_inverted="no" name="Numout[4]"/>
+            <net is_signal_inverted="no" name="Numout[5]"/>
+            <net is_signal_inverted="no" name="Numout[6]"/>
+            <net is_signal_inverted="no" name="Numout[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="Select" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="Select[0]"/>
+            <net is_signal_inverted="no" name="Select[1]"/>
+            <net is_signal_inverted="no" name="Select[2]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="add_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="add_result[0]"/>
+            <net is_signal_inverted="no" name="add_result[1]"/>
+            <net is_signal_inverted="no" name="add_result[2]"/>
+            <net is_signal_inverted="no" name="add_result[3]"/>
+            <net is_signal_inverted="no" name="add_result[4]"/>
+            <net is_signal_inverted="no" name="add_result[5]"/>
+            <net is_signal_inverted="no" name="add_result[6]"/>
+            <net is_signal_inverted="no" name="add_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="all_on_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="all_on_result[0]"/>
+            <net is_signal_inverted="no" name="all_on_result[1]"/>
+            <net is_signal_inverted="no" name="all_on_result[2]"/>
+            <net is_signal_inverted="no" name="all_on_result[3]"/>
+            <net is_signal_inverted="no" name="all_on_result[4]"/>
+            <net is_signal_inverted="no" name="all_on_result[5]"/>
+            <net is_signal_inverted="no" name="all_on_result[6]"/>
+            <net is_signal_inverted="no" name="all_on_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ave_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="ave_result[0]"/>
+            <net is_signal_inverted="no" name="ave_result[1]"/>
+            <net is_signal_inverted="no" name="ave_result[2]"/>
+            <net is_signal_inverted="no" name="ave_result[3]"/>
+            <net is_signal_inverted="no" name="ave_result[4]"/>
+            <net is_signal_inverted="no" name="ave_result[5]"/>
+            <net is_signal_inverted="no" name="ave_result[6]"/>
+            <net is_signal_inverted="no" name="ave_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="div_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="div_result[0]"/>
+            <net is_signal_inverted="no" name="div_result[1]"/>
+            <net is_signal_inverted="no" name="div_result[2]"/>
+            <net is_signal_inverted="no" name="div_result[3]"/>
+            <net is_signal_inverted="no" name="div_result[4]"/>
+            <net is_signal_inverted="no" name="div_result[5]"/>
+            <net is_signal_inverted="no" name="div_result[6]"/>
+            <net is_signal_inverted="no" name="div_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="max_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="max_result[0]"/>
+            <net is_signal_inverted="no" name="max_result[1]"/>
+            <net is_signal_inverted="no" name="max_result[2]"/>
+            <net is_signal_inverted="no" name="max_result[3]"/>
+            <net is_signal_inverted="no" name="max_result[4]"/>
+            <net is_signal_inverted="no" name="max_result[5]"/>
+            <net is_signal_inverted="no" name="max_result[6]"/>
+            <net is_signal_inverted="no" name="max_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="min_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="min_result[0]"/>
+            <net is_signal_inverted="no" name="min_result[1]"/>
+            <net is_signal_inverted="no" name="min_result[2]"/>
+            <net is_signal_inverted="no" name="min_result[3]"/>
+            <net is_signal_inverted="no" name="min_result[4]"/>
+            <net is_signal_inverted="no" name="min_result[5]"/>
+            <net is_signal_inverted="no" name="min_result[6]"/>
+            <net is_signal_inverted="no" name="min_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="mul_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="mul_result[0]"/>
+            <net is_signal_inverted="no" name="mul_result[1]"/>
+            <net is_signal_inverted="no" name="mul_result[2]"/>
+            <net is_signal_inverted="no" name="mul_result[3]"/>
+            <net is_signal_inverted="no" name="mul_result[4]"/>
+            <net is_signal_inverted="no" name="mul_result[5]"/>
+            <net is_signal_inverted="no" name="mul_result[6]"/>
+            <net is_signal_inverted="no" name="mul_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="sub_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="sub_result[0]"/>
+            <net is_signal_inverted="no" name="sub_result[1]"/>
+            <net is_signal_inverted="no" name="sub_result[2]"/>
+            <net is_signal_inverted="no" name="sub_result[3]"/>
+            <net is_signal_inverted="no" name="sub_result[4]"/>
+            <net is_signal_inverted="no" name="sub_result[5]"/>
+            <net is_signal_inverted="no" name="sub_result[6]"/>
+            <net is_signal_inverted="no" name="sub_result[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="A" order="lsb_to_msb" radix="unsigned_dec" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="A[0]"/>
+            <net is_signal_inverted="no" name="A[1]"/>
+            <net is_signal_inverted="no" name="A[2]"/>
+            <net is_signal_inverted="no" name="A[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="B" order="lsb_to_msb" radix="unsigned_dec" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="B[0]"/>
+            <net is_signal_inverted="no" name="B[1]"/>
+            <net is_signal_inverted="no" name="B[2]"/>
+            <net is_signal_inverted="no" name="B[3]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="Numout" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="Numout[0]"/>
+            <net is_signal_inverted="no" name="Numout[1]"/>
+            <net is_signal_inverted="no" name="Numout[2]"/>
+            <net is_signal_inverted="no" name="Numout[3]"/>
+            <net is_signal_inverted="no" name="Numout[4]"/>
+            <net is_signal_inverted="no" name="Numout[5]"/>
+            <net is_signal_inverted="no" name="Numout[6]"/>
+            <net is_signal_inverted="no" name="Numout[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="Select" order="lsb_to_msb" radix="unsigned_dec" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="Select[0]"/>
+            <net is_signal_inverted="no" name="Select[1]"/>
+            <net is_signal_inverted="no" name="Select[2]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="add_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="add_result[0]"/>
+            <net is_signal_inverted="no" name="add_result[1]"/>
+            <net is_signal_inverted="no" name="add_result[2]"/>
+            <net is_signal_inverted="no" name="add_result[3]"/>
+            <net is_signal_inverted="no" name="add_result[4]"/>
+            <net is_signal_inverted="no" name="add_result[5]"/>
+            <net is_signal_inverted="no" name="add_result[6]"/>
+            <net is_signal_inverted="no" name="add_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="all_on_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="all_on_result[0]"/>
+            <net is_signal_inverted="no" name="all_on_result[1]"/>
+            <net is_signal_inverted="no" name="all_on_result[2]"/>
+            <net is_signal_inverted="no" name="all_on_result[3]"/>
+            <net is_signal_inverted="no" name="all_on_result[4]"/>
+            <net is_signal_inverted="no" name="all_on_result[5]"/>
+            <net is_signal_inverted="no" name="all_on_result[6]"/>
+            <net is_signal_inverted="no" name="all_on_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="ave_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="ave_result[0]"/>
+            <net is_signal_inverted="no" name="ave_result[1]"/>
+            <net is_signal_inverted="no" name="ave_result[2]"/>
+            <net is_signal_inverted="no" name="ave_result[3]"/>
+            <net is_signal_inverted="no" name="ave_result[4]"/>
+            <net is_signal_inverted="no" name="ave_result[5]"/>
+            <net is_signal_inverted="no" name="ave_result[6]"/>
+            <net is_signal_inverted="no" name="ave_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="div_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="div_result[0]"/>
+            <net is_signal_inverted="no" name="div_result[1]"/>
+            <net is_signal_inverted="no" name="div_result[2]"/>
+            <net is_signal_inverted="no" name="div_result[3]"/>
+            <net is_signal_inverted="no" name="div_result[4]"/>
+            <net is_signal_inverted="no" name="div_result[5]"/>
+            <net is_signal_inverted="no" name="div_result[6]"/>
+            <net is_signal_inverted="no" name="div_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="max_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="max_result[0]"/>
+            <net is_signal_inverted="no" name="max_result[1]"/>
+            <net is_signal_inverted="no" name="max_result[2]"/>
+            <net is_signal_inverted="no" name="max_result[3]"/>
+            <net is_signal_inverted="no" name="max_result[4]"/>
+            <net is_signal_inverted="no" name="max_result[5]"/>
+            <net is_signal_inverted="no" name="max_result[6]"/>
+            <net is_signal_inverted="no" name="max_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="min_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="min_result[0]"/>
+            <net is_signal_inverted="no" name="min_result[1]"/>
+            <net is_signal_inverted="no" name="min_result[2]"/>
+            <net is_signal_inverted="no" name="min_result[3]"/>
+            <net is_signal_inverted="no" name="min_result[4]"/>
+            <net is_signal_inverted="no" name="min_result[5]"/>
+            <net is_signal_inverted="no" name="min_result[6]"/>
+            <net is_signal_inverted="no" name="min_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="mul_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="mul_result[0]"/>
+            <net is_signal_inverted="no" name="mul_result[1]"/>
+            <net is_signal_inverted="no" name="mul_result[2]"/>
+            <net is_signal_inverted="no" name="mul_result[3]"/>
+            <net is_signal_inverted="no" name="mul_result[4]"/>
+            <net is_signal_inverted="no" name="mul_result[5]"/>
+            <net is_signal_inverted="no" name="mul_result[6]"/>
+            <net is_signal_inverted="no" name="mul_result[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="sub_result" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="sub_result[0]"/>
+            <net is_signal_inverted="no" name="sub_result[1]"/>
+            <net is_signal_inverted="no" name="sub_result[2]"/>
+            <net is_signal_inverted="no" name="sub_result[3]"/>
+            <net is_signal_inverted="no" name="sub_result[4]"/>
+            <net is_signal_inverted="no" name="sub_result[5]"/>
+            <net is_signal_inverted="no" name="sub_result[6]"/>
+            <net is_signal_inverted="no" name="sub_result[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="6D469FAA" global_temp="1" name="trigger: 2019/10/17 17:08:08  #1" position="pre" power_up_trigger_mode="false" segment_size="1" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" segment_size="1" trigger_in="dont_care" trigger_out="active high" trigger_type="circular"/>
+        <events>
+          <level enabled="yes" type="advanced">'A[0]' == either edge &amp;&amp; 'A[1]' == either edge &amp;&amp; 'A[2]' == either edge &amp;&amp; 'A[3]' == either edge
+            <power_up enabled="yes">
+              <power_up_expression><![CDATA['logical_0':(or('detector_0':(mbpm('X',{'A[0]'})),'detector_1':(mbpm('X',{'A[1]'})),'detector_2':(mbpm('X',{'A[2]'})),'detector_3':(mbpm('X',{'A[3]'})),'detector_4':(mbpm('X',{'B[0]'})),'detector_5':(mbpm('X',{'B[1]'})),'detector_6':(mbpm('X',{'B[2]'})),'detector_7':(mbpm('X',{'B[3]'})),'detector_10':(mbpm('X',{'Select[0]'})),'detector_9':(mbpm('X',{'Select[1]'})),'detector_8':(mbpm('X',{'Select[2]'}))))]]>
+              </power_up_expression>
+            </power_up>
+            <expression><![CDATA['logical_0':(or('detector_0':(mbpm('E',{'A[0]'})),'detector_1':(mbpm('E',{'A[1]'})),'detector_2':(mbpm('E',{'A[2]'})),'detector_3':(mbpm('E',{'A[3]'})),'detector_4':(mbpm('E',{'B[0]'})),'detector_5':(mbpm('E',{'B[1]'})),'detector_6':(mbpm('E',{'B[2]'})),'detector_7':(mbpm('E',{'B[3]'})),'detector_10':(mbpm('E',{'Select[0]'})),'detector_9':(mbpm('E',{'Select[1]'})),'detector_8':(mbpm('E',{'Select[2]'}))))]]>
+            </expression>
+            <op_node>
+              <op_node expanded="1" first_port_empty="1" left="1152" top="594" type="Advanced Trigger Level Result">
+                <op_node expanded="1" left="1022" logical="Logical Or" name="logical_0" top="554" type="Logical Operator">
+                  <op_node expanded="1" left="892" name="detector_0" pattern="E" top="4" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="A[0]" top="44" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" first_port_empty="1" left="892" name="detector_1" pattern="E" top="114" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="A[1]" top="154" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" left="892" name="detector_2" pattern="E" top="224" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="A[2]" top="264" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" first_port_empty="1" left="892" name="detector_3" pattern="E" top="334" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="A[3]" top="374" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" left="892" name="detector_4" pattern="E" top="444" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="B[0]" top="484" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" first_port_empty="1" left="892" name="detector_5" pattern="E" top="554" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="B[1]" top="594" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" first_port_empty="1" left="892" name="detector_6" pattern="E" top="664" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="B[2]" top="704" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" left="892" name="detector_7" pattern="E" top="774" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="B[3]" top="814" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" left="892" name="detector_10" pattern="E" top="884" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="Select[0]" top="924" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" left="892" name="detector_9" pattern="E" top="994" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="Select[1]" top="1034" type="Node"/>
+                  </op_node>
+                  <op_node expanded="1" first_port_empty="1" left="892" name="detector_8" pattern="E" top="1104" type="Edge &amp; Level Detector">
+                    <op_node left="762" name="Select[2]" top="1144" type="Node"/>
+                  </op_node>
+                </op_node>
+              </op_node>
+            </op_node>
+          </level>
+        </events>
+        <data global_temp="1" name="log: 2019/10/17 17:09:06  #0" power_up_mode="false" sample_depth="128" trigger_position="16">0110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011111111111110100100011111111100100000000000000110000011000000001001001011111011000111111111111101001000111111111001000000000000001100000110000000010010010111110110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011111111111110100100011111111100100000000000000110000011000000001001001011111011000111111111111101001000111111111001000000000000001100000110000000010010010111110110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011111111111110100100011111111100100000000000000110000011000000001001001011111011000111111111111101001000111111111001000000000000001100000110000000010010010111110110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011111111111110100100011111111100100000000000000110000011000000001001001011111011000111111111111101001000111111111001000000000000001100000110000000010010010111110110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011111111111110100100011111111100100000000000000110000011000000001001001011111011000111111111111101001000111111111001000000000000001100000110000000010010010111110110001111111111111010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111011000110000000011001001000111111111001000000000000001100000110000000010010010111110110001100000000110010010001111111110010000000000000011000001100000000100100101111101100011000000001100100100011111111100100000000000000110000011000000001001001011111</data>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1680,925,398,0,0,50,0,0,0"/>
+  </global_info>
+</session>

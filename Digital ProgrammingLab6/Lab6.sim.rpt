@@ -1,0 +1,595 @@
+Simulator report for Lab6
+Fri Dec 06 13:37:41 2019
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 70.0 us      ;
+; Simulation Netlist Size     ; 251 nodes    ;
+; Simulation Coverage         ;      24.70 % ;
+; Total Number of Transitions ; 14235        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; Lab6A.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      24.70 % ;
+; Total nodes checked                                 ; 251          ;
+; Total output ports checked                          ; 251          ;
+; Total output ports with complete 1/0-value coverage ; 62           ;
+; Total output ports with no 1/0-value coverage       ; 183          ;
+; Total output ports with no 1-value coverage         ; 184          ;
+; Total output ports with no 0-value coverage         ; 188          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |Lab6|Alu:Alu1|A[1]        ; |Lab6|Alu:Alu1|A[1]        ; regout           ;
+; |Lab6|Alu:Alu1|A[2]        ; |Lab6|Alu:Alu1|A[2]        ; regout           ;
+; |Lab6|Alu:Alu1|B[1]        ; |Lab6|Alu:Alu1|B[1]        ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[1]   ; |Lab6|Mux:Mux1|muxOut[1]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[2]   ; |Lab6|Mux:Mux1|muxOut[2]   ; regout           ;
+; |Lab6|Alu:Alu1|A[0]~295    ; |Lab6|Alu:Alu1|A[0]~295    ; combout          ;
+; |Lab6|Alu:Alu1|A[0]~296    ; |Lab6|Alu:Alu1|A[0]~296    ; combout          ;
+; |Lab6|Alu:Alu1|B[0]~306    ; |Lab6|Alu:Alu1|B[0]~306    ; combout          ;
+; |Lab6|Mux:Mux1|Mux7~69     ; |Lab6|Mux:Mux1|Mux7~69     ; combout          ;
+; |Lab6|Mux:Mux1|Mux5~29     ; |Lab6|Mux:Mux1|Mux5~29     ; combout          ;
+; |Lab6|Reg:Reg1|R~2096      ; |Lab6|Reg:Reg1|R~2096      ; combout          ;
+; |Lab6|Reg:Reg1|R~2098      ; |Lab6|Reg:Reg1|R~2098      ; combout          ;
+; |Lab6|Reg:Reg1|R~2101      ; |Lab6|Reg:Reg1|R~2101      ; combout          ;
+; |Lab6|Reg:Reg1|R~34        ; |Lab6|Reg:Reg1|R~34        ; regout           ;
+; |Lab6|Reg:Reg1|R~2103      ; |Lab6|Reg:Reg1|R~2103      ; combout          ;
+; |Lab6|Reg:Reg1|R~2104      ; |Lab6|Reg:Reg1|R~2104      ; combout          ;
+; |Lab6|Reg:Reg1|R~2105      ; |Lab6|Reg:Reg1|R~2105      ; combout          ;
+; |Lab6|Reg:Reg1|R~2106      ; |Lab6|Reg:Reg1|R~2106      ; combout          ;
+; |Lab6|Reg:Reg1|R~36        ; |Lab6|Reg:Reg1|R~36        ; regout           ;
+; |Lab6|Reg:Reg1|R~2108      ; |Lab6|Reg:Reg1|R~2108      ; combout          ;
+; |Lab6|Reg:Reg1|R~2109      ; |Lab6|Reg:Reg1|R~2109      ; combout          ;
+; |Lab6|Reg:Reg1|R~2110      ; |Lab6|Reg:Reg1|R~2110      ; combout          ;
+; |Lab6|Reg:Reg1|R~2111      ; |Lab6|Reg:Reg1|R~2111      ; combout          ;
+; |Lab6|Reg:Reg1|R~2113      ; |Lab6|Reg:Reg1|R~2113      ; combout          ;
+; |Lab6|Reg:Reg1|R~2116      ; |Lab6|Reg:Reg1|R~2116      ; combout          ;
+; |Lab6|Reg:Reg1|R~2118      ; |Lab6|Reg:Reg1|R~2118      ; combout          ;
+; |Lab6|Reg:Reg1|R~2121      ; |Lab6|Reg:Reg1|R~2121      ; combout          ;
+; |Lab6|Reg:Reg1|R~2123      ; |Lab6|Reg:Reg1|R~2123      ; combout          ;
+; |Lab6|Reg:Reg1|R~2126      ; |Lab6|Reg:Reg1|R~2126      ; combout          ;
+; |Lab6|Reg:Reg1|R~2128      ; |Lab6|Reg:Reg1|R~2128      ; combout          ;
+; |Lab6|Reg:Reg1|R~2131      ; |Lab6|Reg:Reg1|R~2131      ; combout          ;
+; |Lab6|Reg:Reg1|R~2133      ; |Lab6|Reg:Reg1|R~2133      ; combout          ;
+; |Lab6|rtl~0                ; |Lab6|rtl~0                ; combout          ;
+; |Lab6|rtl~1                ; |Lab6|rtl~1                ; combout          ;
+; |Lab6|rtl~2                ; |Lab6|rtl~2                ; combout          ;
+; |Lab6|rtl~3                ; |Lab6|rtl~3                ; combout          ;
+; |Lab6|A_out[1]             ; |Lab6|A_out[1]             ; padio            ;
+; |Lab6|A_out[2]             ; |Lab6|A_out[2]             ; padio            ;
+; |Lab6|B_out[1]             ; |Lab6|B_out[1]             ; padio            ;
+; |Lab6|Multiplexer_out[1]   ; |Lab6|Multiplexer_out[1]   ; padio            ;
+; |Lab6|Multiplexer_out[2]   ; |Lab6|Multiplexer_out[2]   ; padio            ;
+; |Lab6|clock                ; |Lab6|clock~corein         ; combout          ;
+; |Lab6|WrA                  ; |Lab6|WrA~corein           ; combout          ;
+; |Lab6|ALUop[2]             ; |Lab6|ALUop[2]~corein      ; combout          ;
+; |Lab6|ALUop[1]             ; |Lab6|ALUop[1]~corein      ; combout          ;
+; |Lab6|WrB                  ; |Lab6|WrB~corein           ; combout          ;
+; |Lab6|BS[0]                ; |Lab6|BS[0]~corein         ; combout          ;
+; |Lab6|BS[2]                ; |Lab6|BS[2]~corein         ; combout          ;
+; |Lab6|BS[1]                ; |Lab6|BS[1]~corein         ; combout          ;
+; |Lab6|reg_add[0]           ; |Lab6|reg_add[0]~corein    ; combout          ;
+; |Lab6|reg_add[1]           ; |Lab6|reg_add[1]~corein    ; combout          ;
+; |Lab6|RNW                  ; |Lab6|RNW~corein           ; combout          ;
+; |Lab6|clock~clkctrl        ; |Lab6|clock~clkctrl        ; outclk           ;
+; |Lab6|Reg:Reg1|R~66feeder  ; |Lab6|Reg:Reg1|R~66feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~130feeder ; |Lab6|Reg:Reg1|R~130feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~34feeder  ; |Lab6|Reg:Reg1|R~34feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[1]~feeder ; |Lab6|Alu:Alu1|A[1]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[1]~feeder ; |Lab6|Alu:Alu1|B[1]~feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~132feeder ; |Lab6|Reg:Reg1|R~132feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~36feeder  ; |Lab6|Reg:Reg1|R~36feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[2]~feeder ; |Lab6|Alu:Alu1|A[2]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[2]~feeder ; |Lab6|Alu:Alu1|B[2]~feeder ; combout          ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |Lab6|Alu:Alu1|A[0]        ; |Lab6|Alu:Alu1|A[0]        ; regout           ;
+; |Lab6|Alu:Alu1|A[3]        ; |Lab6|Alu:Alu1|A[3]        ; regout           ;
+; |Lab6|Alu:Alu1|A[4]        ; |Lab6|Alu:Alu1|A[4]        ; regout           ;
+; |Lab6|Alu:Alu1|A[5]        ; |Lab6|Alu:Alu1|A[5]        ; regout           ;
+; |Lab6|Alu:Alu1|A[6]        ; |Lab6|Alu:Alu1|A[6]        ; regout           ;
+; |Lab6|Alu:Alu1|A[7]        ; |Lab6|Alu:Alu1|A[7]        ; regout           ;
+; |Lab6|Alu:Alu1|B[0]        ; |Lab6|Alu:Alu1|B[0]        ; regout           ;
+; |Lab6|Alu:Alu1|B[3]        ; |Lab6|Alu:Alu1|B[3]        ; regout           ;
+; |Lab6|Alu:Alu1|B[4]        ; |Lab6|Alu:Alu1|B[4]        ; regout           ;
+; |Lab6|Alu:Alu1|B[5]        ; |Lab6|Alu:Alu1|B[5]        ; regout           ;
+; |Lab6|Alu:Alu1|B[6]        ; |Lab6|Alu:Alu1|B[6]        ; regout           ;
+; |Lab6|Alu:Alu1|B[7]        ; |Lab6|Alu:Alu1|B[7]        ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[0]   ; |Lab6|Mux:Mux1|muxOut[0]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[3]   ; |Lab6|Mux:Mux1|muxOut[3]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[4]   ; |Lab6|Mux:Mux1|muxOut[4]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[5]   ; |Lab6|Mux:Mux1|muxOut[5]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[6]   ; |Lab6|Mux:Mux1|muxOut[6]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[7]   ; |Lab6|Mux:Mux1|muxOut[7]   ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[0]  ; |Lab6|Reg:Reg1|DataOut[0]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[1]  ; |Lab6|Reg:Reg1|DataOut[1]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[3]  ; |Lab6|Reg:Reg1|DataOut[3]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[4]  ; |Lab6|Reg:Reg1|DataOut[4]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[5]  ; |Lab6|Reg:Reg1|DataOut[5]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[6]  ; |Lab6|Reg:Reg1|DataOut[6]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[7]  ; |Lab6|Reg:Reg1|DataOut[7]  ; regout           ;
+; |Lab6|Mux:Mux1|Mux6~81     ; |Lab6|Mux:Mux1|Mux6~81     ; combout          ;
+; |Lab6|Mux:Mux1|Mux4~16     ; |Lab6|Mux:Mux1|Mux4~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux3~16     ; |Lab6|Mux:Mux1|Mux3~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux2~16     ; |Lab6|Mux:Mux1|Mux2~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux1~16     ; |Lab6|Mux:Mux1|Mux1~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux0~16     ; |Lab6|Mux:Mux1|Mux0~16     ; combout          ;
+; |Lab6|Reg:Reg1|R~96        ; |Lab6|Reg:Reg1|R~96        ; regout           ;
+; |Lab6|Reg:Reg1|R~112       ; |Lab6|Reg:Reg1|R~112       ; regout           ;
+; |Lab6|Reg:Reg1|R~80        ; |Lab6|Reg:Reg1|R~80        ; regout           ;
+; |Lab6|Reg:Reg1|R~128       ; |Lab6|Reg:Reg1|R~128       ; regout           ;
+; |Lab6|Reg:Reg1|R~2097      ; |Lab6|Reg:Reg1|R~2097      ; combout          ;
+; |Lab6|Reg:Reg1|R~48        ; |Lab6|Reg:Reg1|R~48        ; regout           ;
+; |Lab6|Reg:Reg1|R~32        ; |Lab6|Reg:Reg1|R~32        ; regout           ;
+; |Lab6|Reg:Reg1|R~16        ; |Lab6|Reg:Reg1|R~16        ; regout           ;
+; |Lab6|Reg:Reg1|R~64        ; |Lab6|Reg:Reg1|R~64        ; regout           ;
+; |Lab6|Reg:Reg1|R~2099      ; |Lab6|Reg:Reg1|R~2099      ; combout          ;
+; |Lab6|Reg:Reg1|R~2100      ; |Lab6|Reg:Reg1|R~2100      ; combout          ;
+; |Lab6|Reg:Reg1|R~98        ; |Lab6|Reg:Reg1|R~98        ; regout           ;
+; |Lab6|Reg:Reg1|R~114       ; |Lab6|Reg:Reg1|R~114       ; regout           ;
+; |Lab6|Reg:Reg1|R~82        ; |Lab6|Reg:Reg1|R~82        ; regout           ;
+; |Lab6|Reg:Reg1|R~130       ; |Lab6|Reg:Reg1|R~130       ; regout           ;
+; |Lab6|Reg:Reg1|R~2102      ; |Lab6|Reg:Reg1|R~2102      ; combout          ;
+; |Lab6|Reg:Reg1|R~50        ; |Lab6|Reg:Reg1|R~50        ; regout           ;
+; |Lab6|Reg:Reg1|R~18        ; |Lab6|Reg:Reg1|R~18        ; regout           ;
+; |Lab6|Reg:Reg1|R~66        ; |Lab6|Reg:Reg1|R~66        ; regout           ;
+; |Lab6|Reg:Reg1|R~100       ; |Lab6|Reg:Reg1|R~100       ; regout           ;
+; |Lab6|Reg:Reg1|R~116       ; |Lab6|Reg:Reg1|R~116       ; regout           ;
+; |Lab6|Reg:Reg1|R~84        ; |Lab6|Reg:Reg1|R~84        ; regout           ;
+; |Lab6|Reg:Reg1|R~132       ; |Lab6|Reg:Reg1|R~132       ; regout           ;
+; |Lab6|Reg:Reg1|R~2107      ; |Lab6|Reg:Reg1|R~2107      ; combout          ;
+; |Lab6|Reg:Reg1|R~20        ; |Lab6|Reg:Reg1|R~20        ; regout           ;
+; |Lab6|Reg:Reg1|R~68        ; |Lab6|Reg:Reg1|R~68        ; regout           ;
+; |Lab6|Reg:Reg1|R~102       ; |Lab6|Reg:Reg1|R~102       ; regout           ;
+; |Lab6|Reg:Reg1|R~118       ; |Lab6|Reg:Reg1|R~118       ; regout           ;
+; |Lab6|Reg:Reg1|R~86        ; |Lab6|Reg:Reg1|R~86        ; regout           ;
+; |Lab6|Reg:Reg1|R~134       ; |Lab6|Reg:Reg1|R~134       ; regout           ;
+; |Lab6|Reg:Reg1|R~2112      ; |Lab6|Reg:Reg1|R~2112      ; combout          ;
+; |Lab6|Reg:Reg1|R~54        ; |Lab6|Reg:Reg1|R~54        ; regout           ;
+; |Lab6|Reg:Reg1|R~38        ; |Lab6|Reg:Reg1|R~38        ; regout           ;
+; |Lab6|Reg:Reg1|R~22        ; |Lab6|Reg:Reg1|R~22        ; regout           ;
+; |Lab6|Reg:Reg1|R~70        ; |Lab6|Reg:Reg1|R~70        ; regout           ;
+; |Lab6|Reg:Reg1|R~2114      ; |Lab6|Reg:Reg1|R~2114      ; combout          ;
+; |Lab6|Reg:Reg1|R~2115      ; |Lab6|Reg:Reg1|R~2115      ; combout          ;
+; |Lab6|Reg:Reg1|R~104       ; |Lab6|Reg:Reg1|R~104       ; regout           ;
+; |Lab6|Reg:Reg1|R~120       ; |Lab6|Reg:Reg1|R~120       ; regout           ;
+; |Lab6|Reg:Reg1|R~88        ; |Lab6|Reg:Reg1|R~88        ; regout           ;
+; |Lab6|Reg:Reg1|R~136       ; |Lab6|Reg:Reg1|R~136       ; regout           ;
+; |Lab6|Reg:Reg1|R~2117      ; |Lab6|Reg:Reg1|R~2117      ; combout          ;
+; |Lab6|Reg:Reg1|R~56        ; |Lab6|Reg:Reg1|R~56        ; regout           ;
+; |Lab6|Reg:Reg1|R~40        ; |Lab6|Reg:Reg1|R~40        ; regout           ;
+; |Lab6|Reg:Reg1|R~24        ; |Lab6|Reg:Reg1|R~24        ; regout           ;
+; |Lab6|Reg:Reg1|R~72        ; |Lab6|Reg:Reg1|R~72        ; regout           ;
+; |Lab6|Reg:Reg1|R~2119      ; |Lab6|Reg:Reg1|R~2119      ; combout          ;
+; |Lab6|Reg:Reg1|R~2120      ; |Lab6|Reg:Reg1|R~2120      ; combout          ;
+; |Lab6|Reg:Reg1|R~106       ; |Lab6|Reg:Reg1|R~106       ; regout           ;
+; |Lab6|Reg:Reg1|R~122       ; |Lab6|Reg:Reg1|R~122       ; regout           ;
+; |Lab6|Reg:Reg1|R~90        ; |Lab6|Reg:Reg1|R~90        ; regout           ;
+; |Lab6|Reg:Reg1|R~138       ; |Lab6|Reg:Reg1|R~138       ; regout           ;
+; |Lab6|Reg:Reg1|R~2122      ; |Lab6|Reg:Reg1|R~2122      ; combout          ;
+; |Lab6|Reg:Reg1|R~58        ; |Lab6|Reg:Reg1|R~58        ; regout           ;
+; |Lab6|Reg:Reg1|R~42        ; |Lab6|Reg:Reg1|R~42        ; regout           ;
+; |Lab6|Reg:Reg1|R~26        ; |Lab6|Reg:Reg1|R~26        ; regout           ;
+; |Lab6|Reg:Reg1|R~74        ; |Lab6|Reg:Reg1|R~74        ; regout           ;
+; |Lab6|Reg:Reg1|R~2124      ; |Lab6|Reg:Reg1|R~2124      ; combout          ;
+; |Lab6|Reg:Reg1|R~2125      ; |Lab6|Reg:Reg1|R~2125      ; combout          ;
+; |Lab6|Reg:Reg1|R~108       ; |Lab6|Reg:Reg1|R~108       ; regout           ;
+; |Lab6|Reg:Reg1|R~124       ; |Lab6|Reg:Reg1|R~124       ; regout           ;
+; |Lab6|Reg:Reg1|R~92        ; |Lab6|Reg:Reg1|R~92        ; regout           ;
+; |Lab6|Reg:Reg1|R~140       ; |Lab6|Reg:Reg1|R~140       ; regout           ;
+; |Lab6|Reg:Reg1|R~2127      ; |Lab6|Reg:Reg1|R~2127      ; combout          ;
+; |Lab6|Reg:Reg1|R~60        ; |Lab6|Reg:Reg1|R~60        ; regout           ;
+; |Lab6|Reg:Reg1|R~44        ; |Lab6|Reg:Reg1|R~44        ; regout           ;
+; |Lab6|Reg:Reg1|R~28        ; |Lab6|Reg:Reg1|R~28        ; regout           ;
+; |Lab6|Reg:Reg1|R~76        ; |Lab6|Reg:Reg1|R~76        ; regout           ;
+; |Lab6|Reg:Reg1|R~2129      ; |Lab6|Reg:Reg1|R~2129      ; combout          ;
+; |Lab6|Reg:Reg1|R~2130      ; |Lab6|Reg:Reg1|R~2130      ; combout          ;
+; |Lab6|Reg:Reg1|R~110       ; |Lab6|Reg:Reg1|R~110       ; regout           ;
+; |Lab6|Reg:Reg1|R~126       ; |Lab6|Reg:Reg1|R~126       ; regout           ;
+; |Lab6|Reg:Reg1|R~94        ; |Lab6|Reg:Reg1|R~94        ; regout           ;
+; |Lab6|Reg:Reg1|R~142       ; |Lab6|Reg:Reg1|R~142       ; regout           ;
+; |Lab6|Reg:Reg1|R~2132      ; |Lab6|Reg:Reg1|R~2132      ; combout          ;
+; |Lab6|Reg:Reg1|R~62        ; |Lab6|Reg:Reg1|R~62        ; regout           ;
+; |Lab6|Reg:Reg1|R~46        ; |Lab6|Reg:Reg1|R~46        ; regout           ;
+; |Lab6|Reg:Reg1|R~30        ; |Lab6|Reg:Reg1|R~30        ; regout           ;
+; |Lab6|Reg:Reg1|R~78        ; |Lab6|Reg:Reg1|R~78        ; regout           ;
+; |Lab6|Reg:Reg1|R~2134      ; |Lab6|Reg:Reg1|R~2134      ; combout          ;
+; |Lab6|Reg:Reg1|R~2135      ; |Lab6|Reg:Reg1|R~2135      ; combout          ;
+; |Lab6|rtl~4                ; |Lab6|rtl~4                ; combout          ;
+; |Lab6|rtl~5                ; |Lab6|rtl~5                ; combout          ;
+; |Lab6|rtl~6                ; |Lab6|rtl~6                ; combout          ;
+; |Lab6|rtl~7                ; |Lab6|rtl~7                ; combout          ;
+; |Lab6|ALUout[0]            ; |Lab6|ALUout[0]            ; padio            ;
+; |Lab6|ALUout[1]            ; |Lab6|ALUout[1]            ; padio            ;
+; |Lab6|ALUout[2]            ; |Lab6|ALUout[2]            ; padio            ;
+; |Lab6|ALUout[3]            ; |Lab6|ALUout[3]            ; padio            ;
+; |Lab6|ALUout[4]            ; |Lab6|ALUout[4]            ; padio            ;
+; |Lab6|ALUout[5]            ; |Lab6|ALUout[5]            ; padio            ;
+; |Lab6|ALUout[6]            ; |Lab6|ALUout[6]            ; padio            ;
+; |Lab6|ALUout[7]            ; |Lab6|ALUout[7]            ; padio            ;
+; |Lab6|A_out[0]             ; |Lab6|A_out[0]             ; padio            ;
+; |Lab6|A_out[3]             ; |Lab6|A_out[3]             ; padio            ;
+; |Lab6|A_out[4]             ; |Lab6|A_out[4]             ; padio            ;
+; |Lab6|A_out[5]             ; |Lab6|A_out[5]             ; padio            ;
+; |Lab6|A_out[6]             ; |Lab6|A_out[6]             ; padio            ;
+; |Lab6|A_out[7]             ; |Lab6|A_out[7]             ; padio            ;
+; |Lab6|B_out[0]             ; |Lab6|B_out[0]             ; padio            ;
+; |Lab6|B_out[3]             ; |Lab6|B_out[3]             ; padio            ;
+; |Lab6|B_out[4]             ; |Lab6|B_out[4]             ; padio            ;
+; |Lab6|B_out[5]             ; |Lab6|B_out[5]             ; padio            ;
+; |Lab6|B_out[6]             ; |Lab6|B_out[6]             ; padio            ;
+; |Lab6|B_out[7]             ; |Lab6|B_out[7]             ; padio            ;
+; |Lab6|Multiplexer_out[0]   ; |Lab6|Multiplexer_out[0]   ; padio            ;
+; |Lab6|Multiplexer_out[3]   ; |Lab6|Multiplexer_out[3]   ; padio            ;
+; |Lab6|Multiplexer_out[4]   ; |Lab6|Multiplexer_out[4]   ; padio            ;
+; |Lab6|Multiplexer_out[5]   ; |Lab6|Multiplexer_out[5]   ; padio            ;
+; |Lab6|Multiplexer_out[6]   ; |Lab6|Multiplexer_out[6]   ; padio            ;
+; |Lab6|Multiplexer_out[7]   ; |Lab6|Multiplexer_out[7]   ; padio            ;
+; |Lab6|Register_out[0]      ; |Lab6|Register_out[0]      ; padio            ;
+; |Lab6|Register_out[1]      ; |Lab6|Register_out[1]      ; padio            ;
+; |Lab6|Register_out[3]      ; |Lab6|Register_out[3]      ; padio            ;
+; |Lab6|Register_out[4]      ; |Lab6|Register_out[4]      ; padio            ;
+; |Lab6|Register_out[5]      ; |Lab6|Register_out[5]      ; padio            ;
+; |Lab6|Register_out[6]      ; |Lab6|Register_out[6]      ; padio            ;
+; |Lab6|Register_out[7]      ; |Lab6|Register_out[7]      ; padio            ;
+; |Lab6|disp_drv[0]          ; |Lab6|disp_drv[0]          ; padio            ;
+; |Lab6|disp_drv[1]          ; |Lab6|disp_drv[1]          ; padio            ;
+; |Lab6|disp_drv[2]          ; |Lab6|disp_drv[2]          ; padio            ;
+; |Lab6|disp_drv[3]          ; |Lab6|disp_drv[3]          ; padio            ;
+; |Lab6|disp_drv[4]          ; |Lab6|disp_drv[4]          ; padio            ;
+; |Lab6|disp_drv[5]          ; |Lab6|disp_drv[5]          ; padio            ;
+; |Lab6|disp_drv[6]          ; |Lab6|disp_drv[6]          ; padio            ;
+; |Lab6|disp_drv[7]          ; |Lab6|disp_drv[7]          ; padio            ;
+; |Lab6|disp_drv[8]          ; |Lab6|disp_drv[8]          ; padio            ;
+; |Lab6|disp_drv[9]          ; |Lab6|disp_drv[9]          ; padio            ;
+; |Lab6|disp_drv[10]         ; |Lab6|disp_drv[10]         ; padio            ;
+; |Lab6|disp_drv[11]         ; |Lab6|disp_drv[11]         ; padio            ;
+; |Lab6|disp_drv[12]         ; |Lab6|disp_drv[12]         ; padio            ;
+; |Lab6|disp_drv[13]         ; |Lab6|disp_drv[13]         ; padio            ;
+; |Lab6|ALUop[0]             ; |Lab6|ALUop[0]~corein      ; combout          ;
+; |Lab6|reg_add[2]           ; |Lab6|reg_add[2]~corein    ; combout          ;
+; |Lab6|Reg:Reg1|R~64feeder  ; |Lab6|Reg:Reg1|R~64feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~128feeder ; |Lab6|Reg:Reg1|R~128feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~32feeder  ; |Lab6|Reg:Reg1|R~32feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~70feeder  ; |Lab6|Reg:Reg1|R~70feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~134feeder ; |Lab6|Reg:Reg1|R~134feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~38feeder  ; |Lab6|Reg:Reg1|R~38feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[3]~feeder ; |Lab6|Alu:Alu1|A[3]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[3]~feeder ; |Lab6|Alu:Alu1|B[3]~feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~72feeder  ; |Lab6|Reg:Reg1|R~72feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~136feeder ; |Lab6|Reg:Reg1|R~136feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~40feeder  ; |Lab6|Reg:Reg1|R~40feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[4]~feeder ; |Lab6|Alu:Alu1|A[4]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[5]~feeder ; |Lab6|Alu:Alu1|B[5]~feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~138feeder ; |Lab6|Reg:Reg1|R~138feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~42feeder  ; |Lab6|Reg:Reg1|R~42feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~124feeder ; |Lab6|Reg:Reg1|R~124feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~140feeder ; |Lab6|Reg:Reg1|R~140feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~44feeder  ; |Lab6|Reg:Reg1|R~44feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~126feeder ; |Lab6|Reg:Reg1|R~126feeder ; combout          ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |Lab6|Alu:Alu1|A[0]        ; |Lab6|Alu:Alu1|A[0]        ; regout           ;
+; |Lab6|Alu:Alu1|A[3]        ; |Lab6|Alu:Alu1|A[3]        ; regout           ;
+; |Lab6|Alu:Alu1|A[4]        ; |Lab6|Alu:Alu1|A[4]        ; regout           ;
+; |Lab6|Alu:Alu1|A[5]        ; |Lab6|Alu:Alu1|A[5]        ; regout           ;
+; |Lab6|Alu:Alu1|A[6]        ; |Lab6|Alu:Alu1|A[6]        ; regout           ;
+; |Lab6|Alu:Alu1|A[7]        ; |Lab6|Alu:Alu1|A[7]        ; regout           ;
+; |Lab6|Alu:Alu1|B[0]        ; |Lab6|Alu:Alu1|B[0]        ; regout           ;
+; |Lab6|Alu:Alu1|B[2]        ; |Lab6|Alu:Alu1|B[2]        ; regout           ;
+; |Lab6|Alu:Alu1|B[3]        ; |Lab6|Alu:Alu1|B[3]        ; regout           ;
+; |Lab6|Alu:Alu1|B[4]        ; |Lab6|Alu:Alu1|B[4]        ; regout           ;
+; |Lab6|Alu:Alu1|B[5]        ; |Lab6|Alu:Alu1|B[5]        ; regout           ;
+; |Lab6|Alu:Alu1|B[6]        ; |Lab6|Alu:Alu1|B[6]        ; regout           ;
+; |Lab6|Alu:Alu1|B[7]        ; |Lab6|Alu:Alu1|B[7]        ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[0]   ; |Lab6|Mux:Mux1|muxOut[0]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[3]   ; |Lab6|Mux:Mux1|muxOut[3]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[4]   ; |Lab6|Mux:Mux1|muxOut[4]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[5]   ; |Lab6|Mux:Mux1|muxOut[5]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[6]   ; |Lab6|Mux:Mux1|muxOut[6]   ; regout           ;
+; |Lab6|Mux:Mux1|muxOut[7]   ; |Lab6|Mux:Mux1|muxOut[7]   ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[0]  ; |Lab6|Reg:Reg1|DataOut[0]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[1]  ; |Lab6|Reg:Reg1|DataOut[1]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[2]  ; |Lab6|Reg:Reg1|DataOut[2]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[3]  ; |Lab6|Reg:Reg1|DataOut[3]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[4]  ; |Lab6|Reg:Reg1|DataOut[4]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[5]  ; |Lab6|Reg:Reg1|DataOut[5]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[6]  ; |Lab6|Reg:Reg1|DataOut[6]  ; regout           ;
+; |Lab6|Reg:Reg1|DataOut[7]  ; |Lab6|Reg:Reg1|DataOut[7]  ; regout           ;
+; |Lab6|Mux:Mux1|Mux4~16     ; |Lab6|Mux:Mux1|Mux4~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux3~16     ; |Lab6|Mux:Mux1|Mux3~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux2~16     ; |Lab6|Mux:Mux1|Mux2~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux1~16     ; |Lab6|Mux:Mux1|Mux1~16     ; combout          ;
+; |Lab6|Mux:Mux1|Mux0~16     ; |Lab6|Mux:Mux1|Mux0~16     ; combout          ;
+; |Lab6|Reg:Reg1|R~96        ; |Lab6|Reg:Reg1|R~96        ; regout           ;
+; |Lab6|Reg:Reg1|R~112       ; |Lab6|Reg:Reg1|R~112       ; regout           ;
+; |Lab6|Reg:Reg1|R~80        ; |Lab6|Reg:Reg1|R~80        ; regout           ;
+; |Lab6|Reg:Reg1|R~128       ; |Lab6|Reg:Reg1|R~128       ; regout           ;
+; |Lab6|Reg:Reg1|R~2097      ; |Lab6|Reg:Reg1|R~2097      ; combout          ;
+; |Lab6|Reg:Reg1|R~48        ; |Lab6|Reg:Reg1|R~48        ; regout           ;
+; |Lab6|Reg:Reg1|R~32        ; |Lab6|Reg:Reg1|R~32        ; regout           ;
+; |Lab6|Reg:Reg1|R~16        ; |Lab6|Reg:Reg1|R~16        ; regout           ;
+; |Lab6|Reg:Reg1|R~64        ; |Lab6|Reg:Reg1|R~64        ; regout           ;
+; |Lab6|Reg:Reg1|R~2099      ; |Lab6|Reg:Reg1|R~2099      ; combout          ;
+; |Lab6|Reg:Reg1|R~2100      ; |Lab6|Reg:Reg1|R~2100      ; combout          ;
+; |Lab6|Reg:Reg1|R~98        ; |Lab6|Reg:Reg1|R~98        ; regout           ;
+; |Lab6|Reg:Reg1|R~114       ; |Lab6|Reg:Reg1|R~114       ; regout           ;
+; |Lab6|Reg:Reg1|R~82        ; |Lab6|Reg:Reg1|R~82        ; regout           ;
+; |Lab6|Reg:Reg1|R~130       ; |Lab6|Reg:Reg1|R~130       ; regout           ;
+; |Lab6|Reg:Reg1|R~2102      ; |Lab6|Reg:Reg1|R~2102      ; combout          ;
+; |Lab6|Reg:Reg1|R~50        ; |Lab6|Reg:Reg1|R~50        ; regout           ;
+; |Lab6|Reg:Reg1|R~18        ; |Lab6|Reg:Reg1|R~18        ; regout           ;
+; |Lab6|Reg:Reg1|R~66        ; |Lab6|Reg:Reg1|R~66        ; regout           ;
+; |Lab6|Reg:Reg1|R~100       ; |Lab6|Reg:Reg1|R~100       ; regout           ;
+; |Lab6|Reg:Reg1|R~116       ; |Lab6|Reg:Reg1|R~116       ; regout           ;
+; |Lab6|Reg:Reg1|R~84        ; |Lab6|Reg:Reg1|R~84        ; regout           ;
+; |Lab6|Reg:Reg1|R~132       ; |Lab6|Reg:Reg1|R~132       ; regout           ;
+; |Lab6|Reg:Reg1|R~2107      ; |Lab6|Reg:Reg1|R~2107      ; combout          ;
+; |Lab6|Reg:Reg1|R~52        ; |Lab6|Reg:Reg1|R~52        ; regout           ;
+; |Lab6|Reg:Reg1|R~20        ; |Lab6|Reg:Reg1|R~20        ; regout           ;
+; |Lab6|Reg:Reg1|R~68        ; |Lab6|Reg:Reg1|R~68        ; regout           ;
+; |Lab6|Reg:Reg1|R~102       ; |Lab6|Reg:Reg1|R~102       ; regout           ;
+; |Lab6|Reg:Reg1|R~118       ; |Lab6|Reg:Reg1|R~118       ; regout           ;
+; |Lab6|Reg:Reg1|R~86        ; |Lab6|Reg:Reg1|R~86        ; regout           ;
+; |Lab6|Reg:Reg1|R~134       ; |Lab6|Reg:Reg1|R~134       ; regout           ;
+; |Lab6|Reg:Reg1|R~2112      ; |Lab6|Reg:Reg1|R~2112      ; combout          ;
+; |Lab6|Reg:Reg1|R~54        ; |Lab6|Reg:Reg1|R~54        ; regout           ;
+; |Lab6|Reg:Reg1|R~38        ; |Lab6|Reg:Reg1|R~38        ; regout           ;
+; |Lab6|Reg:Reg1|R~22        ; |Lab6|Reg:Reg1|R~22        ; regout           ;
+; |Lab6|Reg:Reg1|R~70        ; |Lab6|Reg:Reg1|R~70        ; regout           ;
+; |Lab6|Reg:Reg1|R~2114      ; |Lab6|Reg:Reg1|R~2114      ; combout          ;
+; |Lab6|Reg:Reg1|R~2115      ; |Lab6|Reg:Reg1|R~2115      ; combout          ;
+; |Lab6|Reg:Reg1|R~104       ; |Lab6|Reg:Reg1|R~104       ; regout           ;
+; |Lab6|Reg:Reg1|R~120       ; |Lab6|Reg:Reg1|R~120       ; regout           ;
+; |Lab6|Reg:Reg1|R~88        ; |Lab6|Reg:Reg1|R~88        ; regout           ;
+; |Lab6|Reg:Reg1|R~136       ; |Lab6|Reg:Reg1|R~136       ; regout           ;
+; |Lab6|Reg:Reg1|R~2117      ; |Lab6|Reg:Reg1|R~2117      ; combout          ;
+; |Lab6|Reg:Reg1|R~56        ; |Lab6|Reg:Reg1|R~56        ; regout           ;
+; |Lab6|Reg:Reg1|R~40        ; |Lab6|Reg:Reg1|R~40        ; regout           ;
+; |Lab6|Reg:Reg1|R~24        ; |Lab6|Reg:Reg1|R~24        ; regout           ;
+; |Lab6|Reg:Reg1|R~72        ; |Lab6|Reg:Reg1|R~72        ; regout           ;
+; |Lab6|Reg:Reg1|R~2119      ; |Lab6|Reg:Reg1|R~2119      ; combout          ;
+; |Lab6|Reg:Reg1|R~2120      ; |Lab6|Reg:Reg1|R~2120      ; combout          ;
+; |Lab6|Reg:Reg1|R~106       ; |Lab6|Reg:Reg1|R~106       ; regout           ;
+; |Lab6|Reg:Reg1|R~122       ; |Lab6|Reg:Reg1|R~122       ; regout           ;
+; |Lab6|Reg:Reg1|R~90        ; |Lab6|Reg:Reg1|R~90        ; regout           ;
+; |Lab6|Reg:Reg1|R~138       ; |Lab6|Reg:Reg1|R~138       ; regout           ;
+; |Lab6|Reg:Reg1|R~2122      ; |Lab6|Reg:Reg1|R~2122      ; combout          ;
+; |Lab6|Reg:Reg1|R~58        ; |Lab6|Reg:Reg1|R~58        ; regout           ;
+; |Lab6|Reg:Reg1|R~42        ; |Lab6|Reg:Reg1|R~42        ; regout           ;
+; |Lab6|Reg:Reg1|R~26        ; |Lab6|Reg:Reg1|R~26        ; regout           ;
+; |Lab6|Reg:Reg1|R~74        ; |Lab6|Reg:Reg1|R~74        ; regout           ;
+; |Lab6|Reg:Reg1|R~2124      ; |Lab6|Reg:Reg1|R~2124      ; combout          ;
+; |Lab6|Reg:Reg1|R~2125      ; |Lab6|Reg:Reg1|R~2125      ; combout          ;
+; |Lab6|Reg:Reg1|R~108       ; |Lab6|Reg:Reg1|R~108       ; regout           ;
+; |Lab6|Reg:Reg1|R~124       ; |Lab6|Reg:Reg1|R~124       ; regout           ;
+; |Lab6|Reg:Reg1|R~92        ; |Lab6|Reg:Reg1|R~92        ; regout           ;
+; |Lab6|Reg:Reg1|R~140       ; |Lab6|Reg:Reg1|R~140       ; regout           ;
+; |Lab6|Reg:Reg1|R~2127      ; |Lab6|Reg:Reg1|R~2127      ; combout          ;
+; |Lab6|Reg:Reg1|R~60        ; |Lab6|Reg:Reg1|R~60        ; regout           ;
+; |Lab6|Reg:Reg1|R~44        ; |Lab6|Reg:Reg1|R~44        ; regout           ;
+; |Lab6|Reg:Reg1|R~28        ; |Lab6|Reg:Reg1|R~28        ; regout           ;
+; |Lab6|Reg:Reg1|R~76        ; |Lab6|Reg:Reg1|R~76        ; regout           ;
+; |Lab6|Reg:Reg1|R~2129      ; |Lab6|Reg:Reg1|R~2129      ; combout          ;
+; |Lab6|Reg:Reg1|R~2130      ; |Lab6|Reg:Reg1|R~2130      ; combout          ;
+; |Lab6|Reg:Reg1|R~110       ; |Lab6|Reg:Reg1|R~110       ; regout           ;
+; |Lab6|Reg:Reg1|R~126       ; |Lab6|Reg:Reg1|R~126       ; regout           ;
+; |Lab6|Reg:Reg1|R~94        ; |Lab6|Reg:Reg1|R~94        ; regout           ;
+; |Lab6|Reg:Reg1|R~142       ; |Lab6|Reg:Reg1|R~142       ; regout           ;
+; |Lab6|Reg:Reg1|R~2132      ; |Lab6|Reg:Reg1|R~2132      ; combout          ;
+; |Lab6|Reg:Reg1|R~62        ; |Lab6|Reg:Reg1|R~62        ; regout           ;
+; |Lab6|Reg:Reg1|R~46        ; |Lab6|Reg:Reg1|R~46        ; regout           ;
+; |Lab6|Reg:Reg1|R~30        ; |Lab6|Reg:Reg1|R~30        ; regout           ;
+; |Lab6|Reg:Reg1|R~78        ; |Lab6|Reg:Reg1|R~78        ; regout           ;
+; |Lab6|Reg:Reg1|R~2134      ; |Lab6|Reg:Reg1|R~2134      ; combout          ;
+; |Lab6|Reg:Reg1|R~2135      ; |Lab6|Reg:Reg1|R~2135      ; combout          ;
+; |Lab6|rtl~4                ; |Lab6|rtl~4                ; combout          ;
+; |Lab6|rtl~5                ; |Lab6|rtl~5                ; combout          ;
+; |Lab6|rtl~6                ; |Lab6|rtl~6                ; combout          ;
+; |Lab6|rtl~7                ; |Lab6|rtl~7                ; combout          ;
+; |Lab6|ALUout[0]            ; |Lab6|ALUout[0]            ; padio            ;
+; |Lab6|ALUout[1]            ; |Lab6|ALUout[1]            ; padio            ;
+; |Lab6|ALUout[2]            ; |Lab6|ALUout[2]            ; padio            ;
+; |Lab6|ALUout[3]            ; |Lab6|ALUout[3]            ; padio            ;
+; |Lab6|ALUout[4]            ; |Lab6|ALUout[4]            ; padio            ;
+; |Lab6|ALUout[5]            ; |Lab6|ALUout[5]            ; padio            ;
+; |Lab6|ALUout[6]            ; |Lab6|ALUout[6]            ; padio            ;
+; |Lab6|ALUout[7]            ; |Lab6|ALUout[7]            ; padio            ;
+; |Lab6|A_out[0]             ; |Lab6|A_out[0]             ; padio            ;
+; |Lab6|A_out[3]             ; |Lab6|A_out[3]             ; padio            ;
+; |Lab6|A_out[4]             ; |Lab6|A_out[4]             ; padio            ;
+; |Lab6|A_out[5]             ; |Lab6|A_out[5]             ; padio            ;
+; |Lab6|A_out[6]             ; |Lab6|A_out[6]             ; padio            ;
+; |Lab6|A_out[7]             ; |Lab6|A_out[7]             ; padio            ;
+; |Lab6|B_out[0]             ; |Lab6|B_out[0]             ; padio            ;
+; |Lab6|B_out[2]             ; |Lab6|B_out[2]             ; padio            ;
+; |Lab6|B_out[3]             ; |Lab6|B_out[3]             ; padio            ;
+; |Lab6|B_out[4]             ; |Lab6|B_out[4]             ; padio            ;
+; |Lab6|B_out[5]             ; |Lab6|B_out[5]             ; padio            ;
+; |Lab6|B_out[6]             ; |Lab6|B_out[6]             ; padio            ;
+; |Lab6|B_out[7]             ; |Lab6|B_out[7]             ; padio            ;
+; |Lab6|Multiplexer_out[0]   ; |Lab6|Multiplexer_out[0]   ; padio            ;
+; |Lab6|Multiplexer_out[3]   ; |Lab6|Multiplexer_out[3]   ; padio            ;
+; |Lab6|Multiplexer_out[4]   ; |Lab6|Multiplexer_out[4]   ; padio            ;
+; |Lab6|Multiplexer_out[5]   ; |Lab6|Multiplexer_out[5]   ; padio            ;
+; |Lab6|Multiplexer_out[6]   ; |Lab6|Multiplexer_out[6]   ; padio            ;
+; |Lab6|Multiplexer_out[7]   ; |Lab6|Multiplexer_out[7]   ; padio            ;
+; |Lab6|Register_out[0]      ; |Lab6|Register_out[0]      ; padio            ;
+; |Lab6|Register_out[1]      ; |Lab6|Register_out[1]      ; padio            ;
+; |Lab6|Register_out[2]      ; |Lab6|Register_out[2]      ; padio            ;
+; |Lab6|Register_out[3]      ; |Lab6|Register_out[3]      ; padio            ;
+; |Lab6|Register_out[4]      ; |Lab6|Register_out[4]      ; padio            ;
+; |Lab6|Register_out[5]      ; |Lab6|Register_out[5]      ; padio            ;
+; |Lab6|Register_out[6]      ; |Lab6|Register_out[6]      ; padio            ;
+; |Lab6|Register_out[7]      ; |Lab6|Register_out[7]      ; padio            ;
+; |Lab6|disp_drv[0]          ; |Lab6|disp_drv[0]          ; padio            ;
+; |Lab6|disp_drv[1]          ; |Lab6|disp_drv[1]          ; padio            ;
+; |Lab6|disp_drv[2]          ; |Lab6|disp_drv[2]          ; padio            ;
+; |Lab6|disp_drv[3]          ; |Lab6|disp_drv[3]          ; padio            ;
+; |Lab6|disp_drv[4]          ; |Lab6|disp_drv[4]          ; padio            ;
+; |Lab6|disp_drv[5]          ; |Lab6|disp_drv[5]          ; padio            ;
+; |Lab6|disp_drv[6]          ; |Lab6|disp_drv[6]          ; padio            ;
+; |Lab6|disp_drv[7]          ; |Lab6|disp_drv[7]          ; padio            ;
+; |Lab6|disp_drv[8]          ; |Lab6|disp_drv[8]          ; padio            ;
+; |Lab6|disp_drv[9]          ; |Lab6|disp_drv[9]          ; padio            ;
+; |Lab6|disp_drv[10]         ; |Lab6|disp_drv[10]         ; padio            ;
+; |Lab6|disp_drv[11]         ; |Lab6|disp_drv[11]         ; padio            ;
+; |Lab6|disp_drv[12]         ; |Lab6|disp_drv[12]         ; padio            ;
+; |Lab6|disp_drv[13]         ; |Lab6|disp_drv[13]         ; padio            ;
+; |Lab6|ALUop[0]             ; |Lab6|ALUop[0]~corein      ; combout          ;
+; |Lab6|reg_add[2]           ; |Lab6|reg_add[2]~corein    ; combout          ;
+; |Lab6|Reg:Reg1|R~64feeder  ; |Lab6|Reg:Reg1|R~64feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~128feeder ; |Lab6|Reg:Reg1|R~128feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~32feeder  ; |Lab6|Reg:Reg1|R~32feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~70feeder  ; |Lab6|Reg:Reg1|R~70feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~134feeder ; |Lab6|Reg:Reg1|R~134feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~38feeder  ; |Lab6|Reg:Reg1|R~38feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[3]~feeder ; |Lab6|Alu:Alu1|A[3]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[3]~feeder ; |Lab6|Alu:Alu1|B[3]~feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~72feeder  ; |Lab6|Reg:Reg1|R~72feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~136feeder ; |Lab6|Reg:Reg1|R~136feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~40feeder  ; |Lab6|Reg:Reg1|R~40feeder  ; combout          ;
+; |Lab6|Alu:Alu1|A[4]~feeder ; |Lab6|Alu:Alu1|A[4]~feeder ; combout          ;
+; |Lab6|Alu:Alu1|B[5]~feeder ; |Lab6|Alu:Alu1|B[5]~feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~138feeder ; |Lab6|Reg:Reg1|R~138feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~42feeder  ; |Lab6|Reg:Reg1|R~42feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~124feeder ; |Lab6|Reg:Reg1|R~124feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~140feeder ; |Lab6|Reg:Reg1|R~140feeder ; combout          ;
+; |Lab6|Reg:Reg1|R~44feeder  ; |Lab6|Reg:Reg1|R~44feeder  ; combout          ;
+; |Lab6|Reg:Reg1|R~126feeder ; |Lab6|Reg:Reg1|R~126feeder ; combout          ;
++----------------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 7.1 Build 156 04/30/2007 SJ Full Version
+    Info: Processing started: Fri Dec 06 13:37:40 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
+Info: Using vector source file "H:/Digital ProgrammingLab6/Lab6A.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      24.70 %
+Info: Number of transitions in simulation is 14235
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 200 megabytes of memory during processing
+    Info: Processing ended: Fri Dec 06 13:37:41 2019
+    Info: Elapsed time: 00:00:01
+
+

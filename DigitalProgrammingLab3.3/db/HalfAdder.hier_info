@@ -1,0 +1,9 @@
+|HalfAdder
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,18 @@
+/*module FullAdder(A,B,Cin,Sum,Cout);
+	input A,B,Cin;
+	output Sum,Cout;
+	wire Sum1,Cout1,Cout2;
+	HalfAdder ha1(A,B,Sum1,Cout1);
+	HalfAdder ha2(Sum1,Cin,Sum,Cout2); or
+	or1(Cout,Cout1,Cout2);
+endmodule*/ 
+
+module FullAdder(A,B,Sum,Cout);
+
+	input A, B;
+	output Sum, Cout;
+	and and1(Cout,A,B);
+	xor xor1(Sum,A,B);
+	
+endmodule
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Lab2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_3di.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_tcm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|lpm_mult:Mult0" CBX_FILE_NAME="mult_lq01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_hub:sld_hub_inst|lpm_decode:instruction_decoder" CBX_FILE_NAME="decode_aoi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_jri2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_acquisition_buffer:sld_acquisition_buffer_inst|lpm_counter:\write_address_non_zero_gen:write_pointer_counter" CBX_FILE_NAME="cntr_djk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_post_trigger_counter:\gen_non_zero_sample_depth:tc1|lpm_counter:post_trigger_counter" CBX_FILE_NAME="cntr_ofj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_segment_mgr:\gen_non_zero_sample_depth_segment:seg_mgr|lpm_compare:\non_zero_sample_depth_gen:segment_addr_compare" CBX_FILE_NAME="cmpr_nth.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_segment_mgr:\gen_non_zero_sample_depth_segment:seg_mgr|lpm_counter:\non_zero_sample_depth_gen:segment_addr_counter" CBX_FILE_NAME="cntr_noi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger:\multi_level_advanced_trigger_gen:advanced_trigger_wrapper" CBX_FILE_NAME="sld_ela_trigger_lgu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab2|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_7nh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

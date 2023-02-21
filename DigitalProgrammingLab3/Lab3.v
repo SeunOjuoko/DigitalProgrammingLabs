@@ -1,0 +1,30 @@
+/*module Adder4bit(P,Q,Result);
+	input [3:0] P,Q;
+	output [4:0] Result;
+	
+	wire C1,C2,C3;
+	FullAdder FA0 (P[0],Q[0],0,Result[0],C1);
+	FullAdder FA1 (P[1],Q[1],C1,Result[1],C2);
+	FullAdder FA2 (P[2],Q[2],C2,Result[2],C3);
+	FullAdder FA3 (P[3],Q[3],C3,Result[3],Result[4]);
+		
+endmodule
+
+module FullAdder(A,B,Cin,Sum,Cout);
+	input A,B,Cin;
+	output Sum,Cout;
+	wire Sum1,Cout1,Cout2;
+	HalfAdder ha1(A,B,Sum1,Cout1);
+	HalfAdder ha2(Sum1,Cin,Sum,Cout2); or
+	or1(Cout,Cout1,Cout2);
+endmodule */
+
+module Lab3(A,B,Sum,Cout);
+
+	input A, B;
+	output Sum, Cout;
+	and and1(Cout,A,B);
+	xor xor1(Sum,A,B);
+	
+endmodule
+

@@ -1,0 +1,102 @@
+Classic Timing Analyzer report for HalfAdder
+Mon Nov 04 11:05:29 2019
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. tpd
+  5. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                ;
++------------------------------+-------+---------------+-------------+------+-----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To  ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+-----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 10.128 ns   ; A    ; Sum ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;     ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+-----+------------+----------+--------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                             ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                ; Setting            ; From ; To ; Entity Name ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                           ; EP2C20F484C7       ;      ;    ;             ;
+; Timing Models                                         ; Final              ;      ;    ;             ;
+; Default hold multicycle                               ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains             ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                        ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                      ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                 ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements               ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                      ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                  ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                 ; 10                 ;      ;    ;             ;
+; Number of paths to report                             ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                          ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                            ; Off                ;      ;    ;             ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+
+
++-----------------------------------------------------------+
+; tpd                                                       ;
++-------+-------------------+-----------------+------+------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To   ;
++-------+-------------------+-----------------+------+------+
+; N/A   ; None              ; 10.128 ns       ; A    ; Sum  ;
+; N/A   ; None              ; 10.069 ns       ; A    ; Cout ;
+; N/A   ; None              ; 9.237 ns        ; B    ; Sum  ;
+; N/A   ; None              ; 9.210 ns        ; B    ; Cout ;
++-------+-------------------+-----------------+------+------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 7.1 Build 156 04/30/2007 SJ Full Version
+    Info: Processing started: Mon Nov 04 11:05:29 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off HalfAdder -c HalfAdder --timing_analysis_only
+Info: Longest tpd from source pin "A" to destination pin "Sum" is 10.128 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.834 ns) = 0.834 ns; Loc. = PIN_M6; Fanout = 2; PIN Node = 'A'
+    Info: 2: + IC(5.389 ns) + CELL(0.545 ns) = 6.768 ns; Loc. = LCCOMB_X1_Y18_N12; Fanout = 1; COMB Node = 'xor1'
+    Info: 3: + IC(0.520 ns) + CELL(2.840 ns) = 10.128 ns; Loc. = PIN_J1; Fanout = 0; PIN Node = 'Sum'
+    Info: Total cell delay = 4.219 ns ( 41.66 % )
+    Info: Total interconnect delay = 5.909 ns ( 58.34 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Allocated 226 megabytes of memory during processing
+    Info: Processing ended: Mon Nov 04 11:05:30 2019
+    Info: Elapsed time: 00:00:01
+
+

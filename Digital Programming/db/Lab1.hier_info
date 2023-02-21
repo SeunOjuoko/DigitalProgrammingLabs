@@ -1,0 +1,14 @@
+|Lab1
+A => Z~3.IN0
+A => Z~0.IN0
+B => Z~6.IN0
+B => Z~0.IN1
+C => Z~6.IN1
+C => Z~3.IN1
+C => Z~1.IN1
+D => Z~4.IN0
+D => Z~2.IN1
+D => Z~7.IN0
+Z <= Z~8.DB_MAX_OUTPUT_PORT_TYPE
+
+

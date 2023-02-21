@@ -1,0 +1,212 @@
+<sld_project_info>
+  <hub_info ir_width="8" node_count="1"/>
+  <node_info>
+    <node hpath="sld_signaltap:auto_signaltap_0" instance_id="0" mfg_id="110" node_id="0" sld_node_info="0x28006E00" version="5">
+      <parameters>
+        <parameter name="lpm_type" type="string" value="sld_signaltap"/>
+        <parameter name="sld_node_info" type="unknown" value="671116800"/>
+        <parameter name="sld_ip_version" type="dec" value="5"/>
+        <parameter name="sld_ip_minor_version" type="dec" value="0"/>
+        <parameter name="sld_common_ip_version" type="dec" value="0"/>
+        <parameter name="sld_data_bits" type="unknown" value="83"/>
+        <parameter name="sld_trigger_bits" type="unknown" value="83"/>
+        <parameter name="sld_data_bit_cntr_bits" type="unknown" value="7"/>
+        <parameter name="sld_node_crc_bits" type="dec" value="32"/>
+        <parameter name="sld_node_crc_hiword" type="unknown" value="27974"/>
+        <parameter name="sld_node_crc_loword" type="unknown" value="40874"/>
+        <parameter name="sld_incremental_routing" type="dec" value="0"/>
+        <parameter name="sld_sample_depth" type="unknown" value="128"/>
+        <parameter name="sld_mem_address_bits" type="unknown" value="7"/>
+        <parameter name="sld_ram_block_type" type="string" value="AUTO"/>
+        <parameter name="sld_trigger_level" type="unknown" value="1"/>
+        <parameter name="sld_trigger_in_enabled" type="unknown" value="0"/>
+        <parameter name="sld_advanced_trigger_entity" type="unknown" value="sld_reserved_Lab2_auto_signaltap_0_1_6338,"/>
+        <parameter name="sld_trigger_level_pipeline" type="unknown" value="1"/>
+        <parameter name="sld_enable_advanced_trigger" type="unknown" value="1"/>
+        <parameter name="sld_advanced_trigger_1" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_2" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_3" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_4" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_5" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_6" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_7" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_8" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_9" type="string" value="NONE"/>
+        <parameter name="sld_advanced_trigger_10" type="string" value="NONE"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="16"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="0000000000000000"/>
+        <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
+      </parameters>
+      <inputs>
+        <port name="acq_trigger_in[0]" source="A[0]"/>
+        <port name="acq_data_in[0]" source="A[0]"/>
+        <port name="acq_trigger_in[1]" source="A[1]"/>
+        <port name="acq_data_in[1]" source="A[1]"/>
+        <port name="acq_trigger_in[2]" source="A[2]"/>
+        <port name="acq_data_in[2]" source="A[2]"/>
+        <port name="acq_trigger_in[3]" source="A[3]"/>
+        <port name="acq_data_in[3]" source="A[3]"/>
+        <port name="acq_trigger_in[4]" source="B[0]"/>
+        <port name="acq_data_in[4]" source="B[0]"/>
+        <port name="acq_trigger_in[5]" source="B[1]"/>
+        <port name="acq_data_in[5]" source="B[1]"/>
+        <port name="acq_trigger_in[6]" source="B[2]"/>
+        <port name="acq_data_in[6]" source="B[2]"/>
+        <port name="acq_trigger_in[7]" source="B[3]"/>
+        <port name="acq_data_in[7]" source="B[3]"/>
+        <port name="acq_trigger_in[8]" source="Numout[0]"/>
+        <port name="acq_data_in[8]" source="Numout[0]"/>
+        <port name="acq_trigger_in[9]" source="Numout[1]"/>
+        <port name="acq_data_in[9]" source="Numout[1]"/>
+        <port name="acq_trigger_in[10]" source="Numout[2]"/>
+        <port name="acq_data_in[10]" source="Numout[2]"/>
+        <port name="acq_trigger_in[11]" source="Numout[3]"/>
+        <port name="acq_data_in[11]" source="Numout[3]"/>
+        <port name="acq_trigger_in[12]" source="Numout[4]"/>
+        <port name="acq_data_in[12]" source="Numout[4]"/>
+        <port name="acq_trigger_in[13]" source="Numout[5]"/>
+        <port name="acq_data_in[13]" source="Numout[5]"/>
+        <port name="acq_trigger_in[14]" source="Numout[6]"/>
+        <port name="acq_data_in[14]" source="Numout[6]"/>
+        <port name="acq_trigger_in[15]" source="Numout[7]"/>
+        <port name="acq_data_in[15]" source="Numout[7]"/>
+        <port name="acq_trigger_in[16]" source="Select[0]"/>
+        <port name="acq_data_in[16]" source="Select[0]"/>
+        <port name="acq_trigger_in[17]" source="Select[1]"/>
+        <port name="acq_data_in[17]" source="Select[1]"/>
+        <port name="acq_trigger_in[18]" source="Select[2]"/>
+        <port name="acq_data_in[18]" source="Select[2]"/>
+        <port name="acq_trigger_in[19]" source="add_result[0]"/>
+        <port name="acq_data_in[19]" source="add_result[0]"/>
+        <port name="acq_trigger_in[20]" source="add_result[1]"/>
+        <port name="acq_data_in[20]" source="add_result[1]"/>
+        <port name="acq_trigger_in[21]" source="add_result[2]"/>
+        <port name="acq_data_in[21]" source="add_result[2]"/>
+        <port name="acq_trigger_in[22]" source="add_result[3]"/>
+        <port name="acq_data_in[22]" source="add_result[3]"/>
+        <port name="acq_trigger_in[23]" source="add_result[4]"/>
+        <port name="acq_data_in[23]" source="add_result[4]"/>
+        <port name="acq_trigger_in[24]" source="add_result[5]"/>
+        <port name="acq_data_in[24]" source="add_result[5]"/>
+        <port name="acq_trigger_in[25]" source="add_result[6]"/>
+        <port name="acq_data_in[25]" source="add_result[6]"/>
+        <port name="acq_trigger_in[26]" source="add_result[7]"/>
+        <port name="acq_data_in[26]" source="add_result[7]"/>
+        <port name="acq_trigger_in[27]" source="all_on_result[0]"/>
+        <port name="acq_data_in[27]" source="all_on_result[0]"/>
+        <port name="acq_trigger_in[28]" source="all_on_result[1]"/>
+        <port name="acq_data_in[28]" source="all_on_result[1]"/>
+        <port name="acq_trigger_in[29]" source="all_on_result[2]"/>
+        <port name="acq_data_in[29]" source="all_on_result[2]"/>
+        <port name="acq_trigger_in[30]" source="all_on_result[3]"/>
+        <port name="acq_data_in[30]" source="all_on_result[3]"/>
+        <port name="acq_trigger_in[31]" source="all_on_result[4]"/>
+        <port name="acq_data_in[31]" source="all_on_result[4]"/>
+        <port name="acq_trigger_in[32]" source="all_on_result[5]"/>
+        <port name="acq_data_in[32]" source="all_on_result[5]"/>
+        <port name="acq_trigger_in[33]" source="all_on_result[6]"/>
+        <port name="acq_data_in[33]" source="all_on_result[6]"/>
+        <port name="acq_trigger_in[34]" source="all_on_result[7]"/>
+        <port name="acq_data_in[34]" source="all_on_result[7]"/>
+        <port name="acq_trigger_in[35]" source="ave_result[0]"/>
+        <port name="acq_data_in[35]" source="ave_result[0]"/>
+        <port name="acq_trigger_in[36]" source="ave_result[1]"/>
+        <port name="acq_data_in[36]" source="ave_result[1]"/>
+        <port name="acq_trigger_in[37]" source="ave_result[2]"/>
+        <port name="acq_data_in[37]" source="ave_result[2]"/>
+        <port name="acq_trigger_in[38]" source="ave_result[3]"/>
+        <port name="acq_data_in[38]" source="ave_result[3]"/>
+        <port name="acq_trigger_in[39]" source="ave_result[4]"/>
+        <port name="acq_data_in[39]" source="ave_result[4]"/>
+        <port name="acq_trigger_in[40]" source="ave_result[5]"/>
+        <port name="acq_data_in[40]" source="ave_result[5]"/>
+        <port name="acq_trigger_in[41]" source="ave_result[6]"/>
+        <port name="acq_data_in[41]" source="ave_result[6]"/>
+        <port name="acq_trigger_in[42]" source="ave_result[7]"/>
+        <port name="acq_data_in[42]" source="ave_result[7]"/>
+        <port name="acq_clk" source="clock"/>
+        <port name="acq_trigger_in[43]" source="div_result[0]"/>
+        <port name="acq_data_in[43]" source="div_result[0]"/>
+        <port name="acq_trigger_in[44]" source="div_result[1]"/>
+        <port name="acq_data_in[44]" source="div_result[1]"/>
+        <port name="acq_trigger_in[45]" source="div_result[2]"/>
+        <port name="acq_data_in[45]" source="div_result[2]"/>
+        <port name="acq_trigger_in[46]" source="div_result[3]"/>
+        <port name="acq_data_in[46]" source="div_result[3]"/>
+        <port name="acq_trigger_in[47]" source="div_result[4]"/>
+        <port name="acq_data_in[47]" source="div_result[4]"/>
+        <port name="acq_trigger_in[48]" source="div_result[5]"/>
+        <port name="acq_data_in[48]" source="div_result[5]"/>
+        <port name="acq_trigger_in[49]" source="div_result[6]"/>
+        <port name="acq_data_in[49]" source="div_result[6]"/>
+        <port name="acq_trigger_in[50]" source="div_result[7]"/>
+        <port name="acq_data_in[50]" source="div_result[7]"/>
+        <port name="acq_trigger_in[51]" source="max_result[0]"/>
+        <port name="acq_data_in[51]" source="max_result[0]"/>
+        <port name="acq_trigger_in[52]" source="max_result[1]"/>
+        <port name="acq_data_in[52]" source="max_result[1]"/>
+        <port name="acq_trigger_in[53]" source="max_result[2]"/>
+        <port name="acq_data_in[53]" source="max_result[2]"/>
+        <port name="acq_trigger_in[54]" source="max_result[3]"/>
+        <port name="acq_data_in[54]" source="max_result[3]"/>
+        <port name="acq_trigger_in[55]" source="max_result[4]"/>
+        <port name="acq_data_in[55]" source="max_result[4]"/>
+        <port name="acq_trigger_in[56]" source="max_result[5]"/>
+        <port name="acq_data_in[56]" source="max_result[5]"/>
+        <port name="acq_trigger_in[57]" source="max_result[6]"/>
+        <port name="acq_data_in[57]" source="max_result[6]"/>
+        <port name="acq_trigger_in[58]" source="max_result[7]"/>
+        <port name="acq_data_in[58]" source="max_result[7]"/>
+        <port name="acq_trigger_in[59]" source="min_result[0]"/>
+        <port name="acq_data_in[59]" source="min_result[0]"/>
+        <port name="acq_trigger_in[60]" source="min_result[1]"/>
+        <port name="acq_data_in[60]" source="min_result[1]"/>
+        <port name="acq_trigger_in[61]" source="min_result[2]"/>
+        <port name="acq_data_in[61]" source="min_result[2]"/>
+        <port name="acq_trigger_in[62]" source="min_result[3]"/>
+        <port name="acq_data_in[62]" source="min_result[3]"/>
+        <port name="acq_trigger_in[63]" source="min_result[4]"/>
+        <port name="acq_data_in[63]" source="min_result[4]"/>
+        <port name="acq_trigger_in[64]" source="min_result[5]"/>
+        <port name="acq_data_in[64]" source="min_result[5]"/>
+        <port name="acq_trigger_in[65]" source="min_result[6]"/>
+        <port name="acq_data_in[65]" source="min_result[6]"/>
+        <port name="acq_trigger_in[66]" source="min_result[7]"/>
+        <port name="acq_data_in[66]" source="min_result[7]"/>
+        <port name="acq_trigger_in[67]" source="mul_result[0]"/>
+        <port name="acq_data_in[67]" source="mul_result[0]"/>
+        <port name="acq_trigger_in[68]" source="mul_result[1]"/>
+        <port name="acq_data_in[68]" source="mul_result[1]"/>
+        <port name="acq_trigger_in[69]" source="mul_result[2]"/>
+        <port name="acq_data_in[69]" source="mul_result[2]"/>
+        <port name="acq_trigger_in[70]" source="mul_result[3]"/>
+        <port name="acq_data_in[70]" source="mul_result[3]"/>
+        <port name="acq_trigger_in[71]" source="mul_result[4]"/>
+        <port name="acq_data_in[71]" source="mul_result[4]"/>
+        <port name="acq_trigger_in[72]" source="mul_result[5]"/>
+        <port name="acq_data_in[72]" source="mul_result[5]"/>
+        <port name="acq_trigger_in[73]" source="mul_result[6]"/>
+        <port name="acq_data_in[73]" source="mul_result[6]"/>
+        <port name="acq_trigger_in[74]" source="mul_result[7]"/>
+        <port name="acq_data_in[74]" source="mul_result[7]"/>
+        <port name="acq_trigger_in[75]" source="sub_result[0]"/>
+        <port name="acq_data_in[75]" source="sub_result[0]"/>
+        <port name="acq_trigger_in[76]" source="sub_result[1]"/>
+        <port name="acq_data_in[76]" source="sub_result[1]"/>
+        <port name="acq_trigger_in[77]" source="sub_result[2]"/>
+        <port name="acq_data_in[77]" source="sub_result[2]"/>
+        <port name="acq_trigger_in[78]" source="sub_result[3]"/>
+        <port name="acq_data_in[78]" source="sub_result[3]"/>
+        <port name="acq_trigger_in[79]" source="sub_result[4]"/>
+        <port name="acq_data_in[79]" source="sub_result[4]"/>
+        <port name="acq_trigger_in[80]" source="sub_result[5]"/>
+        <port name="acq_data_in[80]" source="sub_result[5]"/>
+        <port name="acq_trigger_in[81]" source="sub_result[6]"/>
+        <port name="acq_data_in[81]" source="sub_result[6]"/>
+        <port name="acq_trigger_in[82]" source="sub_result[7]"/>
+        <port name="acq_data_in[82]" source="sub_result[7]"/>
+      </inputs>
+      <outputs/>
+    </node>
+  </node_info>
+</sld_project_info>

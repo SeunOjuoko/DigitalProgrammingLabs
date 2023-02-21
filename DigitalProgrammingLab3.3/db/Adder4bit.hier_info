@@ -1,0 +1,120 @@
+|Adder4bit
+P[0] => P[0]~3.IN1
+P[1] => P[1]~2.IN1
+P[2] => P[2]~1.IN1
+P[3] => P[3]~0.IN1
+Q[0] => Q[0]~3.IN1
+Q[1] => Q[1]~2.IN1
+Q[2] => Q[2]~1.IN1
+Q[3] => Q[3]~0.IN1
+Result[0] <= FullAdder:FA0.port3
+Result[1] <= FullAdder:FA1.port3
+Result[2] <= FullAdder:FA2.port3
+Result[3] <= FullAdder:FA3.port3
+Result[4] <= FullAdder:FA3.port4
+
+
+|Adder4bit|FullAdder:FA0
+A => A~0.IN1
+B => B~0.IN1
+Cin => Cin~0.IN1
+Sum <= HalfAdder:ha2.port2
+Cout <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA0|HalfAdder:ha1
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA0|HalfAdder:ha2
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA1
+A => A~0.IN1
+B => B~0.IN1
+Cin => Cin~0.IN1
+Sum <= HalfAdder:ha2.port2
+Cout <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA1|HalfAdder:ha1
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA1|HalfAdder:ha2
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA2
+A => A~0.IN1
+B => B~0.IN1
+Cin => Cin~0.IN1
+Sum <= HalfAdder:ha2.port2
+Cout <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA2|HalfAdder:ha1
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA2|HalfAdder:ha2
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA3
+A => A~0.IN1
+B => B~0.IN1
+Cin => Cin~0.IN1
+Sum <= HalfAdder:ha2.port2
+Cout <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA3|HalfAdder:ha1
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4bit|FullAdder:FA3|HalfAdder:ha2
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,26 @@
+|FullAdder
+A => A~0.IN1
+B => B~0.IN1
+Cin => Cin~0.IN1
+Sum <= HalfAdder:ha2.port2
+Cout <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|HalfAdder:ha1
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FullAdder|HalfAdder:ha2
+A => xor1.IN0
+A => and1.IN0
+B => xor1.IN1
+B => and1.IN1
+Sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+

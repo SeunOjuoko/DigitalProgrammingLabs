@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 28 13:51:29 2019
+Quartus II Version : 7.1 Build 156 04/30/2007 SJ Full Version
+Revision Name : Adder4bit
+Top-level Entity Name : Adder4bit
+Family : Cyclone II
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

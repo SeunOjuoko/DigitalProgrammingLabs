@@ -1,0 +1,2 @@
+Warning (10236): Verilog HDL Implicit Net warning at Lab3.v(20): created implicit net for "sum1"
+Info (10281): Verilog HDL Declaration information at Lab3.v(19): object "Sum1" differs only in case from object "sum1" in the same scope
